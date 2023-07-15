@@ -1,0 +1,41 @@
+.start {
+  background-image: url("../../imgs/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  max-height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui;
+}
+
+.start__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  margin-top: 50px;
+  margin-left: 400px;
+}
+
+.start__title {
+  letter-spacing: -5px;
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  margin: 0;
+
+  text-shadow: 0 0 50px rgb(0, 0, 0);
+  text-transform: uppercase;
+  max-width: 1300px;
+  text-align: center;
+}
+
+.start__text {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 30px rgb(0, 0, 0);
+  max-width: 1000px;
+  text-align: center;
+}
