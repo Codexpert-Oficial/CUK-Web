@@ -1,9 +1,10 @@
 header {
   display: flex;
   font-family: system-ui;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
+  z-index: 50;
 }
 
 .header__background {
@@ -12,7 +13,6 @@ header {
   max-height: 270px;
   min-height: 270px;
   filter: drop-shadow(0 0 20px #000000e1);
-  z-index: 50;
 }
 
 .header__container {
