@@ -8,6 +8,13 @@
   justify-content: center;
   align-items: center;
   font-family: system-ui;
+  width: 100%;
+}
+
+#institutional__start {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgb(0, 0, 0)),
+    url("../../imgs/institutionalBackground.webp");
+  background-size: cover;
 }
 
 .start__content {
@@ -18,6 +25,10 @@
   border-radius: 50px;
   margin-top: 50px;
   margin-left: 400px;
+}
+
+.start__content-center {
+  margin-left: 0;
 }
 
 .start__title {

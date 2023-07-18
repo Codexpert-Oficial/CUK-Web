@@ -17,7 +17,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1;
-  gap: 50px;
+  gap: 30px;
   margin: 40px;
 }
 
@@ -32,6 +32,7 @@
   backdrop-filter: blur(5px);
   box-sizing: border-box;
   grid-column: 2;
+  height: fit-content;
 }
 
 .ganchos {
@@ -39,14 +40,14 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: -50px;
+  margin-top: -40px;
   padding: 0 80px;
   box-sizing: border-box;
 }
 
 .gancho {
   width: 30px;
-  height: 70px;
+  height: 60px;
   background-color: rgb(235, 219, 104);
   border-radius: 30px;
 }
@@ -65,6 +66,11 @@
   color: rgba(240, 248, 255, 0.752);
   text-transform: uppercase;
   margin: 0;
+}
+
+.calendar__arrow {
+  color: rgba(240, 248, 255, 0.752);
+  padding-top: 10px;
 }
 
 .calendar__content {
@@ -120,10 +126,18 @@
   align-items: center;
   justify-content: center;
   color: rgb(233, 237, 240);
+  cursor: pointer;
 }
 
-.event__day {
-  cursor: pointer;
+.event__day:hover:after {
+  content: attr(data-description);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(50px);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 .calendar__events__container {

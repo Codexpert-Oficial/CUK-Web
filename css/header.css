@@ -5,6 +5,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 50;
+  pointer-events: none;
 }
 
 .header__background {
@@ -24,15 +25,16 @@ header {
 }
 .header__logo__img {
   width: 210px;
-
   box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.564);
   border-radius: 50%;
   margin-top: 15px;
+  pointer-events: all;
 }
 
 .header__nav {
   display: flex;
   height: fit-content;
+  pointer-events: all;
 }
 
 .header__links__container {

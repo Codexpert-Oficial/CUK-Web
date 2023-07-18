@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/main/start.css">
     <link rel="stylesheet" href="../css/main/news.css">
     <link rel="stylesheet" href="../css/main/events.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="shortcut icon" href="../imgs/icons/logo.ico" type="image/x-icon">
 </head>
 
@@ -19,9 +20,9 @@
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"
             class="header__background">
             <path d="M-3.10,94.25 C132.89,99.19 64.05,41.95 500.27,58.72 L500.00,0.00 L0.00,0.00 Z"
-                style="stroke: none; fill: url(#MyGradient);"></path>
+                style="stroke: none; fill: url(#gradient__header);"></path>
             <defs>
-                <linearGradient id="MyGradient">
+                <linearGradient id="gradient__header">
                     <stop offset="5%" stop-color="#3396FF" />
                     <stop offset="95%" stop-color="#1864FC" />
                 </linearGradient>
@@ -37,7 +38,7 @@
                     <a href="" class="header__link">
                         <li>Inicio</li>
                     </a>
-                    <a href="" class="header__link">
+                    <a href="institutional.html" class="header__link">
                         <li>Institucional</li>
                     </a>
                     <a href="" class="header__link">
@@ -148,8 +149,19 @@
                         <div class="gancho"></div>
                     </div>
                     <div class="calendar__top">
-
                         <h3 class="calendar__month__name">Enero</h3>
+                        <div class="calendar__arrows__container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                class="bi bi-caret-left-fill calendar__arrow" viewBox="0 0 16 16">
+                                <path
+                                    d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                class="bi bi-caret-right-fill calendar__arrow" viewBox="0 0 16 16">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                            </svg>
+                        </div>
                     </div>
                     <div class="calendar__content">
                         <div class='calendar__day__names__container'>
@@ -208,7 +220,7 @@
                                 <p>9</p>
                             </div>
                             <div class="calendar__day">
-                                <p class="event__day">10</p>
+                                <p class="event__day" data-description="1era Fecha CUK">10</p>
                             </div>
                             <div class="calendar__day">
                                 <p>11</p>
@@ -241,7 +253,7 @@
                                 <p>20</p>
                             </div>
                             <div class="calendar__day">
-                                <p class="event__day">21</p>
+                                <p class="event__day" data-description="Sudamericano Juv. y Adultos">21</p>
                             </div>
                             <div class="calendar__day">
                                 <p>22</p>
@@ -256,7 +268,7 @@
                                 <p>25</p>
                             </div>
                             <div class="calendar__day">
-                                <p class="event__day">26</p>
+                                <p class="event__day" data-description="Panamericano Adultos">26</p>
                             </div>
                             <div class="calendar__day">
                                 <p>27</p>
@@ -324,6 +336,24 @@
         </article>
     </main>
 
+    <footer>
+        <div class="footer__container">
+            <p class="copyRight">&copy; COPYRIGHT 2022 - CUK.ORG.UY</p>
+            <div class="footer__line"></div>
+            <a href="" class="codexpert__link">Desarrollado por Codexpert</a>
+        </div>
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"
+            class="footer__background">
+            <path d="M-3.10,94.25 C132.89,99.19 64.05,41.95 500.27,58.72 L500.00,0.00 L0.00,0.00 Z"
+                style="stroke: none; fill: url(#gradient__footer);"></path>
+            <defs>
+                <linearGradient id="gradient__footer">
+                    <stop offset="5%" stop-color="#3396FF" />
+                    <stop offset="95%" stop-color="#1864FC" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </footer>
 </body>
 
 </html>

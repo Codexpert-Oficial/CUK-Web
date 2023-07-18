@@ -1,0 +1,27 @@
+.join__CUK {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui;
+  padding: 50px;
+}
+
+.join__CUK__title {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: aliceblue;
+  text-align: center;
+}
+
+.join__CUK__content {
+  background-color: rgba(34, 137, 254, 0.431);
+  backdrop-filter: blur(3px);
+  border-radius: 20px;
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.308);
+  padding: 30px;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: rgb(230, 234, 238);
+  max-width: 900px;
+}
