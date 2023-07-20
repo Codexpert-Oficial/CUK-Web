@@ -17,6 +17,20 @@
   background-size: cover;
 }
 
+#affiliates__start {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgb(0, 0, 0)),
+    url("../../imgs/affiliatesBackground.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#gallery__start {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgb(0, 0, 0)),
+    url("../../imgs/galleryBackground.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
 .start__content {
   display: flex;
   flex-direction: column;

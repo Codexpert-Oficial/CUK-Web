@@ -2,15 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0px;
+  padding: 50px;
   font-family: system-ui;
-}
-
-.member__title {
-  font-size: 50px;
-  text-transform: uppercase;
-  color: aliceblue;
-  text-align: center;
 }
 
 .member__element {

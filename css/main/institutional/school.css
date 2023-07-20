@@ -6,7 +6,7 @@
   max-width: 1200px;
   font-family: system-ui;
   gap: 30px;
-  padding: 50px;
+  padding: 50px 50px 150px 50px;
 }
 
 .school__img {
@@ -16,6 +16,7 @@
   background-image: url("../../../imgs/escuelita.jpeg");
   background-position: bottom center;
   background-size: cover;
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.308);
 }
 
 .faq {
