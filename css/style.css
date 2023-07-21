@@ -19,6 +19,7 @@ html {
 
 table {
   background-color: rgba(26, 143, 245, 0.474);
+  backdrop-filter: blur(3px);
   font-size: 25px;
   font-family: system-ui;
   border-radius: 20px;

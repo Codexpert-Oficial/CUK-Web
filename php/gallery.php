@@ -67,12 +67,6 @@
                         <a href="../html/championships.html" class="header__link">Campeonatos</a>
                     </li>
                     <li>
-                        <a href="" class="header__link">Selección</a>
-                    </li>
-                    <li>
-                        <a href="" class="header__link">Árbitros</a>
-                    </li>
-                    <li>
                         <a href="" class="header__link">Blog</a>
                     </li>
                     <li>
