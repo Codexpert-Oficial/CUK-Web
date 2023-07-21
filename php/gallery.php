@@ -26,7 +26,7 @@
                 <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
             </svg>
         </div>
-        <img class="modal__img">
+        <img class="modal__img" src="#" alt="modal imagen">
         <div class="modal__arros__icon__container modal__arros__icon-right__container">
             <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 0 320 512" class="modal__arrow__icon modal__arrow__icon-right">
                 <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
@@ -47,37 +47,37 @@
         <section class="header__container">
 
             <a href='' class="header__logo">
-                <img src="../imgs/logo.png" class="header__logo__img">
+                <img src="../imgs/logo.png" class="header__logo__img" alt="logo CUK">
             </a>
             <nav class="header__nav">
                 <ul class="header__links__container">
-                    <a href="../html/index.html" class="header__link">
-                        <li>Inicio</li>
-                    </a>
-                    <a href="../html/institutional.html" class="header__link">
-                        <li>Institucional</li>
-                    </a>
-                    <a href="../html/affiliates.html" class="header__link">
-                        <li>Afiliadas</li>
-                    </a>
-                    <a href="" class="header__link">
-                        <li>Galeria</li>
-                    </a>
-                    <a href="" class="header__link">
-                        <li>Campeonatos</li>
-                    </a>
-                    <a href="" class="header__link">
-                        <li>Selección</li>
-                    </a>
-                    <a href="" class="header__link">
-                        <li>Árbitros</li>
-                    </a>
-                    <a href="" class="header__link">
-                        <li>Blog</li>
-                    </a>
-                    <a href="" class="header__link">
-                        <li>Contacto</li>
-                    </a>
+                    <li>
+                        <a href="../html/index.html" class="header__link">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../html/institutional.html" class="header__link">Institucional</a>
+                    </li>
+                    <li>
+                        <a href="../html/affiliates.html" class="header__link">Afiliadas</a>
+                    </li>
+                    <li>
+                        <a href="" class="header__link">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="../html/championships.html" class="header__link">Campeonatos</a>
+                    </li>
+                    <li>
+                        <a href="" class="header__link">Selección</a>
+                    </li>
+                    <li>
+                        <a href="" class="header__link">Árbitros</a>
+                    </li>
+                    <li>
+                        <a href="" class="header__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="" class="header__link">Contacto</a>
+                    </li>
                 </ul>
             </nav>
         </section>
@@ -101,7 +101,7 @@
                 echo "<div class='gallery__img' id='img" . $key . "'> </div>";
                 if (($key + 1) % 48 == 0) {
                     echo "</div>";
-                    echo "<div load__more__container>";
+                    echo "<div class='load__more__container'>";
                     echo "<input type='button' class='load__more' value='Mostrar mas'>";
                     echo "</div>";
                     echo "</section>";

@@ -1,0 +1,56 @@
+.national__champions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.national__ranking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 0 50px 200px 50px;
+}
+
+.ranking__container,
+.ranking__content,
+.ranking__element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ranking__container {
+  gap: 50px;
+}
+
+.ranking__tables {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+
+.ranking__table {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.308);
+}
+
+.ranking__title {
+  font-size: 30px;
+  color: aliceblue;
+  text-align: center;
+  font-family: system-ui;
+}
+
+.category__title {
+  font-size: 25px;
+  color: aliceblue;
+  text-align: center;
+  font-family: system-ui;
+}

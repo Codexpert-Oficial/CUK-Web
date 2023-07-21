@@ -41,15 +41,32 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.modal__close__icon:hover, .modal__arrow__icon:hover {
+.modal__close__icon:hover,
+.modal__arrow__icon:hover {
   transform: scale(1.06);
   cursor: pointer;
 }
 
 .modal__arrow__icon {
   margin: 20px;
-  fill: rgb(240, 248, 255);
+  fill: rgba(240, 248, 255, 0.64);
   transition: transform 0.2s ease-in-out;
+}
+
+.modal__arrow__icon-left {
+  position: absolute;
+  left: 15vw;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.modal__arrow__icon-right {
+  position: absolute;
+  right: 15vw;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .modal__img {

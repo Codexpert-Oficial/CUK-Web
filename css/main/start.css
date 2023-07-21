@@ -15,6 +15,7 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgb(0, 0, 0)),
     url("../../imgs/institutionalBackground.webp");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #affiliates__start {
@@ -22,6 +23,7 @@
     url("../../imgs/affiliatesBackground.jpg");
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
 }
 
 #gallery__start {
@@ -29,6 +31,15 @@
     url("../../imgs/galleryBackground.jpg");
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
+}
+
+#championships__start {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgb(0, 0, 0)),
+    url("../../imgs/campionshipsBackground.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .start__content {
