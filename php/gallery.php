@@ -69,9 +69,6 @@
                     <li>
                         <a href="../html/news.html" class="header__link">Noticias</a>
                     </li>
-                    <li>
-                        <a href="" class="header__link">Contacto</a>
-                    </li>
                 </ul>
             </nav>
         </section>
