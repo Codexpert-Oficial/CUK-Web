@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/main/start.css">
-    <link rel="stylesheet" href="../css/main/gallery.css">
+    <link rel="stylesheet" href="../css/gallery.css">
 </head>
 
 <body>
@@ -67,7 +67,7 @@
                         <a href="../html/championships.html" class="header__link">Campeonatos</a>
                     </li>
                     <li>
-                        <a href="" class="header__link">Blog</a>
+                        <a href="../html/news.html" class="header__link">Noticias</a>
                     </li>
                     <li>
                         <a href="" class="header__link">Contacto</a>

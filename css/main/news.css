@@ -1,10 +1,19 @@
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: system-ui;
+  gap: 50px;
+  padding: 50px;
+  justify-content: center;
+}
+
 .recent__news {
   font-family: system-ui;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  padding: 50px 0;
+  padding: 50px;
 }
 
 .recent__news__title {
@@ -71,6 +80,42 @@
 #new4 {
   background-image: url(../../imgs/new4.jpg);
   background-position: top 40% center;
+}
+
+#new5 {
+  background-image: url(../../imgs/new5.jpg);
+}
+
+#new6 {
+  background-image: url(../../imgs/new6.jpeg);
+}
+
+#new7 {
+  background-image: url(../../imgs/new7.jpeg);
+}
+
+#new8 {
+  background-image: url(../../imgs/new8.jpg);
+}
+
+#new9 {
+  background-image: url(../../imgs/new9.jpeg);
+}
+
+#new10 {
+  background-image: url(../../imgs/new10.jpg);
+}
+
+#new11 {
+  background-image: url(../../imgs/new11.jpeg);
+}
+
+#new12 {
+  background-image: url(../../imgs/new12.jpg);
+}
+
+#new13 {
+  background-image: url(../../imgs/new13.jpg);
 }
 
 .new__date {

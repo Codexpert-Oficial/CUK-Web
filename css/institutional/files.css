@@ -21,6 +21,20 @@
   padding: 0 50px 50px 50px;
 }
 
+.first__files__container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.file__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .files__subtitle {
   color: aliceblue;
   font-size: 40px;

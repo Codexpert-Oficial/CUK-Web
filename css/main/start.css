@@ -15,6 +15,7 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgb(0, 0, 0)),
     url("../../imgs/institutionalBackground.webp");
   background-size: cover;
+  background-position: center center;
   background-attachment: fixed;
 }
 
@@ -37,6 +38,14 @@
 #championships__start {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgb(0, 0, 0)),
     url("../../imgs/campionshipsBackground.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#news__start {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgb(0, 0, 0)),
+    url("../../imgs/newsBackground.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
