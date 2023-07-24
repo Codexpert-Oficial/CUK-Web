@@ -61,7 +61,7 @@
                         <a href="../html/affiliates.html" class="header__link">Afiliadas</a>
                     </li>
                     <li>
-                        <a href="" class="header__link">Galeria</a>
+                        <a href="" class="header__link">Galería</a>
                     </li>
                     <li>
                         <a href="../html/championships.html" class="header__link">Campeonatos</a>
@@ -77,7 +77,7 @@
     <main>
         <article class="start" id="gallery__start">
             <section class="start__content start__content-center">
-                <h1 class="start__title">Galeria</h1>
+                <h1 class="start__title">Galería</h1>
             </section>
         </article>
 
