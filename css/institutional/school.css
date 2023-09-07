@@ -60,3 +60,78 @@
 .faq__content {
   width: 100%;
 }
+
+.faq__content p,
+.faq__content ul {
+  margin: 5px 0;
+}
+
+@media (max-width: 1200px) {
+
+  .school {
+    max-width: 700px;
+  }  
+
+  .school__img {
+    height: 500px;
+  }
+
+  .question__title {
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  
+}
+
+@media (max-width: 900px) {
+
+  .school {
+    max-width: 500px;
+  }  
+
+  .school__img {
+    height: 400px;
+  }
+
+  .faq__container {
+    align-items: start;
+    gap: 5px;
+  }
+
+  .question__title {
+    font-size: 25px;
+    text-align: left;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .school {
+    padding: 50px 30px 150px 30px;
+  }
+
+  .faq {
+    gap: 15px;
+  }
+
+  .faq__title {
+    font-size: 30px;
+    padding: 0 10px;
+  }
+
+  .question__title {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .faq__content p,
+  .faq__content ul {
+    font-size: 16px;
+  }
+
+  .faq__content ul {
+    padding-inline-start: 20px;
+  }
+  
+}

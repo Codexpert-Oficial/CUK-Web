@@ -8,7 +8,7 @@
 
 .member__element {
   background-color: rgba(29, 129, 243, 0.431);
-  width: 300px;
+  max-width: 300px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -30,6 +30,8 @@
   box-sizing: border-box;
   text-align: center;
   font-size: 20px;
+  margin: 10px 0 0 0;
+  padding: 5px;
   height: 80px;
 }
 
@@ -43,4 +45,15 @@
 
 .member__logo {
   width: 100%;
+}
+
+
+@media (max-width: 600px) {
+
+  .member__element {
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
 }

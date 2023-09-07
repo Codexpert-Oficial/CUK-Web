@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +7,12 @@
     <link rel="shortcut icon" href="../imgs/icons/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/main/start.css">
+    <link rel="stylesheet" href="../css/tables.css">
     <link rel="stylesheet" href="../css/championships.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
-
 <body>
-
     <header>
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"
             class="header__background">
@@ -27,12 +25,11 @@
                 </linearGradient>
             </defs>
         </svg>
-        <section class="header__container">
-
+        <nav class="header__container">
             <a href='' class="header__logo">
                 <img src="../imgs/logo.png" class="header__logo__img" alt="logo CUK">
             </a>
-            <nav class="header__nav">
+            <div class="header__nav">
                 <ul class="header__links__container">
                     <li>
                         <a href="index.html" class="header__link">Inicio</a>
@@ -53,17 +50,29 @@
                         <a href="news.html" class="header__link">Noticias</a>
                     </li>
                 </ul>
-            </nav>
-        </section>
+                <div class="header__nav__bars__container">
+                    <svg class="header__nav__open__icon" xmlns="http://www.w3.org/2000/svg" height="54px"
+                        viewBox="0 0 448 512">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                    <svg class="header__nav__close__icon" xmlns="http://www.w3.org/2000/svg" height="70px"
+                        viewBox="0 0 384 512">
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                </div>
+                <div class="header__nav__close__container">
+                </div>
+            </div>
+        </nav>
     </header>
-
     <main>
         <article class="start" id="championships__start">
             <section class="start__content start__content-center">
                 <h1 class="start__title">Campeonatos</h1>
             </section>
         </article>
-
         <article class="coaching">
             <h2 class="article__title">Cuerpo Técnico</h2>
             <table>
@@ -89,7 +98,6 @@
                 </tbody>
             </table>
         </article>
-
         <article class="referees">
             <h2 class="article__title">Integración del Consejo de Árbitros AÑO 2022 - 2024</h2>
             <table>
@@ -106,240 +114,259 @@
                 </tbody>
             </table>
         </article>
-
         <article class="referees__judges">
             <h2 class="article__title">Cuerpo de Árbitros y Jueces 2022 - 2024</h2>
-            <img src="../imgs/table7.jpg" alt="tabla 7" class="table__img">
-
+            <div class="ranking__element__img">
+                <img src="../imgs/table1.jpg" alt="tabla 1" class="table__img">
+                <p class="ranking__element__openImg">Abrir imagen</p>
+            </div>
         </article>
-
         <article class="national__champions">
             <h2 class="article__title">Campeones Nacionales y Ranking 2022</h2>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="3">Categoría</th>
-                        <th>Apellido</th>
-                        <th>Nombre</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>KATA</td>
-                        <td>Femenino</td>
-                        <td>12-13 años</td>
-                        <td>Rodriguez</td>
-                        <td>Tyanna</td>
-                    </tr>
-                    <tr>
-                        <td>KATA</td>
-                        <td>Femenino</td>
-                        <td>14-15 años</td>
-                        <td>Tucci</td>
-                        <td>Agustina</td>
-                    </tr>
-                    <tr>
-                        <td>KATA</td>
-                        <td>Femenino</td>
-                        <td>Mayores</td>
-                        <td>Mokosce</td>
-                        <td>Florencia</td>
-                    </tr>
-                    <tr>
-                        <td>KATA</td>
-                        <td>Masculino</td>
-                        <td>12-13 años</td>
-                        <td>Colmenares</td>
-                        <td>Andres</td>
-                    </tr>
-                    <tr>
-                        <td>KATA</td>
-                        <td>Masculino</td>
-                        <td>14-15 años</td>
-                        <td>Suarez</td>
-                        <td>Andres</td>
-                    </tr>
-                    <tr>
-                        <td>KATA</td>
-                        <td>Masculino</td>
-                        <td>16-17 años</td>
-                        <td>Techera</td>
-                        <td>Lautaro</td>
-                    </tr>
-                    <tr>
-                        <td>KATA</td>
-                        <td>Masculino</td>
-                        <td>Mayores</td>
-                        <td>De Baeremaecker</td>
-                        <td>Martin</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="4">Categoría</th>
-                        <th>Apellido</th>
-                        <th>Nombre</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>KUMITE</td>
-                        <td>Femenino</td>
-                        <td>12-13 años</td>
-                        <td>Mas 47 Kg</td>
-                        <td>Prieto</td>
-                        <td>Jessica</td>
-                    </tr>
-                    <tr>
-                        <td>KUMITE</td>
-                        <td>Femenino</td>
-                        <td>14-15 años</td>
-                        <td>Más 54 Kg</td>
-                        <td>Villareal</td>
-                        <td>Lucia</td>
-                    </tr>
-                    <tr>
-                        <td>KUMITE</td>
-                        <td>Femenino</td>
-                        <td>16-17 años</td>
-                        <td>Menos 59 Kg</td>
-                        <td>Cabot</td>
-                        <td>Sofia</td>
-                    </tr>
-                    <tr>
-                        <td>KUMITE</td>
-                        <td>Femenino</td>
-                        <td>Mayores</td>
-                        <td>Menos 61 Kg</td>
-                        <td>Mocchi</td>
-                        <td>Florencia</td>
-                    </tr>
-                    <tr>
-                        <td>KUMITE</td>
-                        <td>Femenino</td>
-                        <td>Mayores</td>
-                        <td>Más 61 Kg</td>
-                        <td>Viera</td>
-                        <td>Marina</td>
-                    </tr>
-                    <tr>
-                        <td>KUMITE</td>
-                        <td>Masculino</td>
-                        <td>12-13 años</td>
-                        <td>Menos 45 Kg</td>
-                        <td>Velazquez</td>
-                        <td>Thiago</td>
-                    </tr>
-                    <tr>
-                        <td>KUMITE</td>
-                        <td>Masculino</td>
-                        <td>12-13 años</td>
-                        <td>Más 55 Kg</td>
-                        <td>Ciuffardi</td>
-                        <td>Mateo</td>
-                    </tr>
-                    <tr>
-                        <td>KUMITE</td>
-                        <td>Masculino</td>
-                        <td>14-15 años</td>
-                        <td>Menos 57 Kg</td>
-                        <td>Viera</td>
-                        <td>Emiliano</td>
-                    </tr>
-                    <tr>
-                        <td>KUMITE</td>
-                        <td>Masculino</td>
-                        <td>14-15 años</td>
-                        <td>Menos 63 Kg</td>
-                        <td>Sastre</td>
-                        <td>Mateo</td>
-                    </tr>
-                    <tr>
-                        <td>KUMITE</td>
-                        <td>Masculino</td>
-                        <td>14-15 años</td>
-                        <td>Más 63 Kg</td>
-                        <td>Almada</td>
-                        <td>Brian</td>
-                    </tr>
-                    <tr>
-                        <td>KUMITE</td>
-                        <td>Masculino</td>
-                        <td>16-17 años</td>
-                        <td>UNIFICADA</td>
-                        <td>Dotta</td>
-                        <td>Tomas</td>
-                    </tr>
-                    <tr>
-                        <td>KUMITE</td>
-                        <td>Masculino</td>
-                        <td>Mayores</td>
-                        <td>Menos 67 Kg</td>
-                        <td>Barrios</td>
-                        <td>Felipe</td>
-                    </tr>
-                    <tr>
-                        <td>KUMITE</td>
-                        <td>Masculino</td>
-                        <td>Mayores</td>
-                        <td>Menos 75 Kg</td>
-                        <td>Pita</td>
-                        <td>Juan Carlos</td>
-                    </tr>
-                    <tr>
-                        <td>KUMITE</td>
-                        <td>Masculino</td>
-                        <td>Mayores</td>
-                        <td>Más 75 Kg</td>
-                        <td>Macedo</td>
-                        <td>Juan</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="national__champions__tables">
+                <section class="national__champions__tables__content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">Categoría</th>
+                                <th>Apellido</th>
+                                <th>Nombre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>KATA</td>
+                                <td>Femenino</td>
+                                <td>12-13 años</td>
+                                <td>Rodriguez</td>
+                                <td>Tyanna</td>
+                            </tr>
+                            <tr>
+                                <td>KATA</td>
+                                <td>Femenino</td>
+                                <td>14-15 años</td>
+                                <td>Tucci</td>
+                                <td>Agustina</td>
+                            </tr>
+                            <tr>
+                                <td>KATA</td>
+                                <td>Femenino</td>
+                                <td>Mayores</td>
+                                <td>Mokosce</td>
+                                <td>Florencia</td>
+                            </tr>
+                            <tr>
+                                <td>KATA</td>
+                                <td>Masculino</td>
+                                <td>12-13 años</td>
+                                <td>Colmenares</td>
+                                <td>Andres</td>
+                            </tr>
+                            <tr>
+                                <td>KATA</td>
+                                <td>Masculino</td>
+                                <td>14-15 años</td>
+                                <td>Suarez</td>
+                                <td>Andres</td>
+                            </tr>
+                            <tr>
+                                <td>KATA</td>
+                                <td>Masculino</td>
+                                <td>16-17 años</td>
+                                <td>Techera</td>
+                                <td>Lautaro</td>
+                            </tr>
+                            <tr>
+                                <td>KATA</td>
+                                <td>Masculino</td>
+                                <td>Mayores</td>
+                                <td>De Baeremaecker</td>
+                                <td>Martin</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="national__champions__tables__content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="4">Categoría</th>
+                                <th>Apellido</th>
+                                <th>Nombre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>KUMITE</td>
+                                <td>Femenino</td>
+                                <td>12-13 años</td>
+                                <td>Mas 47 Kg</td>
+                                <td>Prieto</td>
+                                <td>Jessica</td>
+                            </tr>
+                            <tr>
+                                <td>KUMITE</td>
+                                <td>Femenino</td>
+                                <td>14-15 años</td>
+                                <td>Más 54 Kg</td>
+                                <td>Villareal</td>
+                                <td>Lucia</td>
+                            </tr>
+                            <tr>
+                                <td>KUMITE</td>
+                                <td>Femenino</td>
+                                <td>16-17 años</td>
+                                <td>Menos 59 Kg</td>
+                                <td>Cabot</td>
+                                <td>Sofia</td>
+                            </tr>
+                            <tr>
+                                <td>KUMITE</td>
+                                <td>Femenino</td>
+                                <td>Mayores</td>
+                                <td>Menos 61 Kg</td>
+                                <td>Mocchi</td>
+                                <td>Florencia</td>
+                            </tr>
+                            <tr>
+                                <td>KUMITE</td>
+                                <td>Femenino</td>
+                                <td>Mayores</td>
+                                <td>Más 61 Kg</td>
+                                <td>Viera</td>
+                                <td>Marina</td>
+                            </tr>
+                            <tr>
+                                <td>KUMITE</td>
+                                <td>Masculino</td>
+                                <td>12-13 años</td>
+                                <td>Menos 45 Kg</td>
+                                <td>Velazquez</td>
+                                <td>Thiago</td>
+                            </tr>
+                            <tr>
+                                <td>KUMITE</td>
+                                <td>Masculino</td>
+                                <td>12-13 años</td>
+                                <td>Más 55 Kg</td>
+                                <td>Ciuffardi</td>
+                                <td>Mateo</td>
+                            </tr>
+                            <tr>
+                                <td>KUMITE</td>
+                                <td>Masculino</td>
+                                <td>14-15 años</td>
+                                <td>Menos 57 Kg</td>
+                                <td>Viera</td>
+                                <td>Emiliano</td>
+                            </tr>
+                            <tr>
+                                <td>KUMITE</td>
+                                <td>Masculino</td>
+                                <td>14-15 años</td>
+                                <td>Menos 63 Kg</td>
+                                <td>Sastre</td>
+                                <td>Mateo</td>
+                            </tr>
+                            <tr>
+                                <td>KUMITE</td>
+                                <td>Masculino</td>
+                                <td>14-15 años</td>
+                                <td>Más 63 Kg</td>
+                                <td>Almada</td>
+                                <td>Brian</td>
+                            </tr>
+                            <tr>
+                                <td>KUMITE</td>
+                                <td>Masculino</td>
+                                <td>16-17 años</td>
+                                <td>UNIFICADA</td>
+                                <td>Dotta</td>
+                                <td>Tomas</td>
+                            </tr>
+                            <tr>
+                                <td>KUMITE</td>
+                                <td>Masculino</td>
+                                <td>Mayores</td>
+                                <td>Menos 67 Kg</td>
+                                <td>Barrios</td>
+                                <td>Felipe</td>
+                            </tr>
+                            <tr>
+                                <td>KUMITE</td>
+                                <td>Masculino</td>
+                                <td>Mayores</td>
+                                <td>Menos 75 Kg</td>
+                                <td>Pita</td>
+                                <td>Juan Carlos</td>
+                            </tr>
+                            <tr>
+                                <td>KUMITE</td>
+                                <td>Masculino</td>
+                                <td>Mayores</td>
+                                <td>Más 75 Kg</td>
+                                <td>Macedo</td>
+                                <td>Juan</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
         </article>
-
         <article class="national__ranking">
             <h2 class="article__title">Ranking Nacional 2023</h2>
-
             <section class="ranking__container">
                 <div class="ranking__content">
                     <h3 class="ranking__title">Medalleros al 01/07/2023</h3>
                     <div class="ranking__tables">
                         <div class="ranking__element">
                             <h4 class="category__title">Categorías infantiles</h4>
-                            <img src="../imgs/table1.jpg" alt="tabla 1" class="table__img">
+                            <div class="ranking__element__img">
+                                <img src="../imgs/table2.jpg" alt="tabla 2" class="table__img">
+                                <p class="ranking__element__openImg">Abrir imagen</p>
+                            </div>
                         </div>
                         <div class="ranking__element">
                             <h4 class="category__title">Categorías oficiales</h4>
-                            <img src="../imgs/table2.jpg" alt="tabla 2" class="table__img">
+                            <div class="ranking__element__img">
+                                <img src="../imgs/table3.jpg" alt="tabla 3" class="table__img">
+                                <p class="ranking__element__openImg">Abrir imagen</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="ranking__content">
                     <h3 class="ranking__title">Ranking Infantil KATA al 01/07/2023</h3>
-                    <img src="../imgs/table3.jpg" alt="tabla 3" class="table__img">
+                    <div class="ranking__element__img">
+                        <img src="../imgs/table4.jpg" alt="tabla 4" class="table__img">
+                        <p class="ranking__element__openImg">Abrir imagen</p>
+                    </div>
                 </div>
                 <div class="ranking__content">
                     <h3 class="ranking__title">Ranking Infantil KUMITE al 01/07/2023</h3>
-                    <img src="../imgs/table4.jpg" alt="tabla 4" class="table__img">
+                    <div class="ranking__element__img">
+                        <img src="../imgs/table5.jpg" alt="tabla 5" class="table__img">
+                        <p class="ranking__element__openImg">Abrir imagen</p>
+                    </div>
                 </div>
                 <div class="ranking__content">
                     <h3 class="ranking__title">Ranking KATA Categorías Oficiales CUK al 01/07/2023</h3>
-                    <img src="../imgs/table5.jpg" alt="tabla 5" class="table__img">
+                    <div class="ranking__element__img">
+                        <img src="../imgs/table6.jpg" alt="tabla 6" class="table__img">
+                        <p class="ranking__element__openImg">Abrir imagen</p>
+                    </div>
                 </div>
                 <div class="ranking__content">
                     <h3 class="ranking__title">Ranking KUMITE Categorías Oficiales CUK al 01/07/2023</h3>
-                    <img src="../imgs/table6.jpg" alt="tabla 6" class="table__img">
+                    <div class="ranking__element__img">
+                        <img src="../imgs/table7.jpg" alt="tabla 7" class="table__img">
+                        <p class="ranking__element__openImg">Abrir imagen</p>
+                    </div>
                 </div>
             </section>
         </article>
     </main>
-
-    <footer>
+    <footer class="footer">
         <div class="footer__container">
             <p class="copyRight">&copy; COPYRIGHT 2022 - CUK.ORG.UY</p>
             <div class="footer__line"></div>
@@ -357,7 +384,6 @@
             </defs>
         </svg>
     </footer>
-
+    <script src="../js/header.js"></script>
 </body>
-
 </html>

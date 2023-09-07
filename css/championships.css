@@ -13,7 +13,41 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.national__champions__tables {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90vw;
   gap: 100px;
+}
+
+.national__champions__tables__content {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.national__champions__tables__content::-webkit-scrollbar {
+  height: 8px;
+}
+
+.national__champions__tables__content::-webkit-scrollbar-thumb {
+  background: rgba(70, 148, 242, 0.703);
+  border-radius: 10px;
+}
+
+.national__champions__tables__content::-webkit-scrollbar-thumb:hover {
+  background: rgba(70, 147, 242, 0.856);
+}
+
+.national__champions__tables__content::-webkit-scrollbar-thumb:active {
+  background: rgb(70, 147, 242);
+}
+
+.national__champions__tables__content::-webkit-scrollbar-track {
+  background: #1864FC;
 }
 
 .national__ranking {
@@ -21,7 +55,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 100px;
   padding: 0 50px 200px 50px;
 }
 
@@ -58,9 +91,64 @@
   font-family: system-ui;
 }
 
+.ranking__element__openImg {
+  text-align: center;
+  font-family: system-ui;
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+}
+
+.ranking__element__openImg:hover {
+  text-decoration: underline;
+}
+
 .category__title {
   font-size: 25px;
   color: aliceblue;
   text-align: center;
   font-family: system-ui;
 }
+
+
+@media (max-width: 1200px) {
+
+  .ranking__element__openImg {
+    display: flex;
+  }
+
+  .table__img {
+    cursor: pointer;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .ranking__element__openImg {
+    font-size: 25px;
+  }
+  
+}
+
+@media (max-width: 600px) {
+
+  .national__champions__tables {
+    gap: 50px;
+  }
+
+  .ranking__tables {
+    flex-wrap: wrap;
+  }
+
+  .ranking__element__openImg {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+}
+
+

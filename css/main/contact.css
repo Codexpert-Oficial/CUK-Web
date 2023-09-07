@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   margin-bottom: 200px;
+  text-transform: uppercase;
 }
 
 .contact__container {
@@ -97,14 +98,19 @@
   background: rgba(255, 255, 255, 0.158);
   backdrop-filter: blur(10px);
   border-radius: 30px;
-  max-width: 900px;
+  max-width: 850px;
   margin-top: 100px;
+  gap: 0;
 }
 
 .contact__text__container {
   font-family: system-ui;
   font-size: 20px;
   color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
 }
 
 .contact__text {
@@ -118,17 +124,89 @@
 .contact__text a {
   color: aliceblue;
   text-decoration: none;
+  text-align: center;
 }
 
 .contact__text a:hover {
   text-decoration: underline;
 }
 
+.contact__text p {
+  text-align: center;
+}
+
 .contact__text__icon {
   fill: aliceblue;
+  width: 30px;
+  height: 30px;
 }
 
 .contact__img {
   border-radius: 20px;
   width: 100%;
+  height: 400px;
+  background: url(../../imgs/mapa.png) no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+}
+
+
+@media (max-width: 1200px) {
+
+  .contact__title { 
+    font-size: 7vw;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .contact__info {
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 500px;
+  }
+
+  .contact__text { 
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .contact__title {
+    font-size: 35px;
+  }
+
+  .contact__form {
+    padding: 20px;
+  }
+
+  .contact__input,
+  .contact__input-textarea {
+    font-size: 20px;
+  }
+
+  .contact__info {
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 370px;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+  
+  .contact__submit {
+    font-size: 23px;
+  }
+
+  .contact__info {
+    padding: 20px;
+    border-radius: 30px;
+    width: 90%;
+  }
+
 }

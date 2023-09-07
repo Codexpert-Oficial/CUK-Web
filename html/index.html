@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +13,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="shortcut icon" href="../imgs/icons/logo.ico" type="image/x-icon">
 </head>
-
 <body>
-
     <header>
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"
             class="header__background">
@@ -29,12 +26,11 @@
                 </linearGradient>
             </defs>
         </svg>
-        <section class="header__container">
-
+        <nav class="header__container">
             <a href='' class="header__logo">
                 <img src="../imgs/logo.png" class="header__logo__img" alt="logo CUK">
             </a>
-            <nav class="header__nav">
+            <div class="header__nav">
                 <ul class="header__links__container">
                     <li>
                         <a href="index.html" class="header__link">Inicio</a>
@@ -55,19 +51,29 @@
                         <a href="news.html" class="header__link">Noticias</a>
                     </li>
                 </ul>
-            </nav>
-        </section>
+                <div class="header__nav__bars__container">
+                    <svg class="header__nav__open__icon" xmlns="http://www.w3.org/2000/svg" height="54px" viewBox="0 0 448 512">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                    <svg class="header__nav__close__icon" xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 0 384 512">
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                </div>
+                <div class="header__nav__close__container">                    
+                </div>
+            </div>
+        </nav>
     </header>
-
     <main>
         <article class="start">
             <section class="start__content">
-                <h1 class="start__title">Confederación uruguaya de karate</h1>
+                <h1 class="start__title-CUK">Confederación uruguaya de karate</h1>
                 <p class="start__text"> Promovemos la difusión, reglamentación, desarrollo, organización y práctica del
                     Karate en todo el territorio de la República Oriental del Uruguay.</p>
             </section>
         </article>
-
         <article class="recent__news">
             <h2 class="recent__news__title">Ultimas Noticias</h2>
             <div class="new__container">
@@ -101,8 +107,6 @@
                         </div>
                     </div>
                 </section>
-            </div>
-            <div class="new__container">
                 <section class="new">
                     <h3 class="new__title">Seminario IOSTK Internacional</h3>
                     <div class="new__img" id="new3">
@@ -147,12 +151,12 @@
                     <div class="calendar__top">
                         <h3 class="calendar__month__name">Enero</h3>
                         <div class="calendar__arrows__container">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 class="bi bi-caret-left-fill calendar__arrow" viewBox="0 0 16 16">
                                 <path
                                     d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
                             </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 class="bi bi-caret-right-fill calendar__arrow" viewBox="0 0 16 16">
                                 <path
                                     d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
@@ -347,7 +351,7 @@
                 <div class="contact__info">
                     <div class="contact__text__container">
                         <div class="contact__text contact__text__email">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" class="contact__text__icon"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="contact__text__icon"
                                 viewBox="0 0 512 512">
                                 <path
                                     d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
@@ -355,21 +359,16 @@
                             <a href="malito:cuk@cuk.org.uy">cuk@cuk.org.uy</a>
                         </div>
                         <div class="contact__text contact__text__location">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" class="contact__text__icon"
-                                viewBox="0 0 384 512">
-                                <path
-                                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
-                            </svg>
+                            
                             <p>Bv. José Batlle y Ordóñez 2326 (CEDEC) - Montevideo - Uruguay</p>
                         </div>
-                        <img class="contact__img" src="../imgs/mapa.png" alt="mapa">
                     </div>
+                    <div class="contact__img"></div>
                 </div>
             </section>
         </article>
     </main>
-
-    <footer>
+    <footer class="footer">
         <div class="footer__container">
             <p class="copyRight">&copy; COPYRIGHT 2022 - CUK.ORG.UY</p>
             <div class="footer__line"></div>
@@ -387,6 +386,8 @@
             </defs>
         </svg>
     </footer>
+    <script src="../js/header.js"></script>
+    <script src="../js/start.js"></script>
 </body>
 
 </html>

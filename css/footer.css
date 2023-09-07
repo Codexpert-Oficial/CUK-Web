@@ -1,4 +1,5 @@
-footer {
+.footer {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -42,4 +43,20 @@ footer {
 .codexpert__link {
   color: rgba(255, 255, 255, 0.811);
   text-decoration: none;
+}
+
+
+
+@media (max-width: 900px) {
+  
+  .footer { 
+    padding-top: 20px;
+    background: linear-gradient(to right, #3396FF, #1864FC)
+  }
+
+  .footer__background {
+    display: none;
+  }
+
+  
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +12,12 @@
     <link rel="stylesheet" href="../css/institutional/member.css">
     <link rel="stylesheet" href="../css/institutional/files.css">
     <link rel="stylesheet" href="../css/institutional/joinCUK.css">
+    <link rel="stylesheet" href="../css/tables.css">
+    <link rel="stylesheet" href="../css/institutional/deportistCard.css">
     <link rel="stylesheet" href="../css/institutional/school.css">
-    <link rel="stylesheet" href="../css/institutional/institutional.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
-
 <body>
-
     <header>
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"
             class="header__background">
@@ -31,12 +30,11 @@
                 </linearGradient>
             </defs>
         </svg>
-        <section class="header__container">
-
-            <a href='' class="header__logo">
+        <nav class="header__container">
+            <a href='index.html' class="header__logo">
                 <img src="../imgs/logo.png" class="header__logo__img" alt="logo CUK">
             </a>
-            <nav class="header__nav">
+            <div class="header__nav">
                 <ul class="header__links__container">
                     <li>
                         <a href="index.html" class="header__link">Inicio</a>
@@ -57,21 +55,29 @@
                         <a href="news.html" class="header__link">Noticias</a>
                     </li>
                 </ul>
-            </nav>
-        </section>
+                <div class="header__nav__bars__container">
+                    <svg class="header__nav__open__icon" xmlns="http://www.w3.org/2000/svg" height="54px" viewBox="0 0 448 512">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                    <svg class="header__nav__close__icon" xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 0 384 512">
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                </div>
+                <div class="header__nav__close__container">
+                </div>
+            </div>
+        </nav>
     </header>
-
     <main>
         <article class="start" id="institutional__start">
             <section class="start__content start__content-center">
-
                 <h1 class="start__title">Institucional</h1>
-
             </section>
         </article>
-
         <article class="member">
-            <h2 class="article__title"> Somos miembro de</h2>
+            <h2 class="article__title"> Somos miembros de</h2>
             <section class="member__content">
                 <div class="member__element">
                     <a href="https://www.wkf.net/" target="_blank">
@@ -97,32 +103,34 @@
                 </div>
             </section>
         </article>
-
         <article class="join__CUK">
             <h2 class="article__title"> ¿Cómo afiliarse a la CUK? </h2>
             <section class="join__CUK__content">
-                <p>Existen dos tipos de afiliaciones a la CUK. Afiliaciones para personas y para instituciones, la
+                <p class="join__CUK__content__text">Existen dos tipos de afiliaciones a la CUK. Afiliaciones para personas y para instituciones, la
                     afiliación de personas requiere que la misma pertenezca a una institución que esté afiliada.</p>
-                <p>Afiliación de Personas a la CUK; Carné Confederado:</p>
-                <p>La solicitud debe realizarla el responsable de la escuela enviando los siguientes datos de sus
-                    alumnos:</p>
-                <ul>
-                    <li>Nombre completo</li>
-                    <li>Nº de C.I.</li>
-                    <li>Fecha de nacimiento</li>
-                </ul>
-                <p>El costo es de $200 y tiene validez hasta el 31 de Diciembre de cada año.</p>
-                <p>Afiliación de instituciones a la CUK.</p>
-                <ul>
-                    <li>Fotocopia de los Estatutos de su Institución</li>
-                    <li>Certificado expedido por el Ministerio de Educación y Cultura, que posee la Personería Jurídica
-                        al día</li>
-                    <li>Lista de autoridades que componen la Comisión Directiva y Comisión Fiscal de su Institución</li>
-                    <li>Aprobación del CE de CUK</li>
-                </ul>
+                <p class="join__CUK__content__text">Afiliación de Personas a la CUK; Carné Confederado:</p>
+                <div class="join__CUK__content__text">
+                    <p>La solicitud debe realizarla el responsable de la escuela enviando los siguientes datos de sus
+                        alumnos:</p>
+                    <ul>
+                        <li>- Nombre completo</li>
+                        <li>- Nº de C.I.</li>
+                        <li>- Fecha de nacimiento</li>
+                    </ul>
+                </div>
+                <p class="join__CUK__content__text">El costo es de $200 y tiene validez hasta el 31 de Diciembre de cada año.</p>
+                <div class="join__CUK__content__text">
+                    <p>Afiliación de instituciones a la CUK.</p>
+                    <ul>
+                        <li>- Fotocopia de los Estatutos de su Institución</li>
+                        <li>- Certificado expedido por el Ministerio de Educación y Cultura, que posee la Personería Jurídica
+                            al día</li>
+                        <li>- Lista de autoridades que componen la Comisión Directiva y Comisión Fiscal de su Institución</li>
+                        <li>- Aprobación del CE de CUK</li>
+                    </ul>
+                </div>
             </section>
         </article>
-
         <article class="files">
             <h2 class="article__title">Archivos</h2>
             <section class="files__container">
@@ -132,14 +140,10 @@
                         <div class="files__line"></div>
                         <div class="files__subcontainer">
                             <div class="files__element">
-                                <div class="file__name__container">
-                                    <p class="file__name">Memoria anual CUK</p>
-                                </div>
-                                <div class="file__img__container">
-                                    <a href="../pdfs/Memoria.pdf">
-                                        <img src="../imgs/memoria.png" alt="memoria" class="file__img">
-                                    </a>
-                                </div>
+                                <p class="file__name">Memoria anual CUK</p>
+                                <a class="file__img__container" href="../pdfs/Memoria.pdf">
+                                    <img src="../imgs/memoria.png" alt="memoria" class="file__img">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -148,14 +152,10 @@
                         <div class="files__line"></div>
                         <div class="files__subcontainer">
                             <div class="files__element">
-                                <div class="file__name__container">
-                                    <p class="file__name">Estatutos CUK</p>
-                                </div>
-                                <div class="file__img__container">
-                                    <a href="../pdfs/Estatutos-CUK.pdf" target="_blank">
-                                        <img src="../imgs/estatutos.png" alt="estatutos" class="file__img">
-                                    </a>
-                                </div>
+                                <p class="file__name">Estatutos CUK</p>
+                                <a class="file__img__container" href="../pdfs/Estatutos-CUK.pdf" target="_blank">
+                                    <img src="../imgs/estatutos.png" alt="estatutos" class="file__img">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -164,14 +164,10 @@
                         <div class="files__line"></div>
                         <div class="files__subcontainer">
                             <div class="files__element">
-                                <div class="file__name__container">
-                                    <p class="file__name">PreSelección Lista 2023</p>
-                                </div>
-                                <div class="file__img__container">
-                                    <a href="../pdfs/Pre-Seleccion-Lista-2023.pdf" target="_blank">
-                                        <img src="../imgs/citaciones.png" alt="citaciones" class="file__img">
-                                    </a>
-                                </div>
+                                <p class="file__name">Pre-selección Lista 2023</p>
+                                <a class="file__img__container" href="../pdfs/Pre-Seleccion-Lista-2023.pdf" target="_blank">
+                                    <img src="../imgs/citaciones.png" alt="citaciones" class="file__img">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -180,100 +176,62 @@
                 <div class="files__line"></div>
                 <div class="files__subcontainer">
                     <div class="files__element">
-                        <div class="file__name__container">
-                            <p class="file__name">Protocolo de uso de logo CUK</p>
-                        </div>
-                        <div class="file__img__container">
-                            <a href="../pdfs/Protocolo-Uso-Logo-CUK-2023.pdf" target="_blank">
-                                <img src="../imgs/usoLogoCuk.png" alt="usoLogoCuk" class="file__img">
-                            </a>
-                        </div>
+                        <p class="file__name">Protocolo de uso de logo CUK</p>
+                        <a class="file__img__container" href="../pdfs/Protocolo-Uso-Logo-CUK-2023.pdf" target="_blank">
+                            <img src="../imgs/usoLogoCuk.png" alt="usoLogoCuk" class="file__img">
+                        </a>
                     </div>
                     <div class="files__element">
-                        <div class="file__name__container">
-                            <p class="file__name">Reglamento Acto Eleccinoario CUK</p>
-                        </div>
-                        <div class="file__img__container">
-                            <a href="../pdfs/Reglamento-Acto-Eleccionario-CUK.pdf" target="_blank">
-                                <img src="../imgs/actoEleccionario.png" alt="actoEleccionario" class="file__img">
-                            </a>
-                        </div>
+                        <p class="file__name">Reglamento Acto Eleccinoario CUK</p>
+                        <a class="file__img__container" href="../pdfs/Reglamento-Acto-Eleccionario-CUK.pdf" target="_blank">
+                            <img src="../imgs/actoEleccionario.png" alt="actoEleccionario" class="file__img">
+                        </a>
                     </div>
                     <div class="files__element">
-                        <div class="file__name__container">
-                            <p class="file__name">Reglamento Entrenamientos Preselección CUK</p>
-                        </div>
-                        <div class="file__img__container">
-                            <a href="../pdfs/Reglamento-Entrenamientos-Preseleccion-CUK.pdf" target="_blank">
-                                <img src="../imgs/entrenamientosPreSeleccion.png" alt="entrenamientosPreSeleccion"
-                                    class="file__img">
-                            </a>
-                        </div>
+                        <p class="file__name">Reglamento Entrenamientos Preselección CUK</p>
+                        <a class="file__img__container" href="../pdfs/Reglamento-Entrenamientos-Preseleccion-CUK.pdf" target="_blank">
+                            <img src="../imgs/entrenamientosPreSeleccion.png" alt="entrenamientosPreSeleccion" class="file__img">
+                        </a>
                     </div>
                     <div class="files__element">
-                        <div class="file__name__container">
-                            <p class="file__name">Reglamento Préstamo de Bienes CUK 2023</p>
-                        </div>
-                        <div class="file__img__container">
-                            <a href="../pdfs/Reglamento-Prestamo-de-Bienes-CUK-2023.pdf" target="_blank">
-                                <img src="../imgs/prestamoDeBienesCUK.png" alt="prestamoDeBienesCUK" class="file__img">
-                            </a>
-                        </div>
+                        <p class="file__name">Reglamento Préstamo de Bienes CUK 2023</p>
+                        <a class="file__img__container" href="../pdfs/Reglamento-Prestamo-de-Bienes-CUK-2023.pdf" target="_blank">
+                            <img src="../imgs/prestamoDeBienesCUK.png" alt="prestamoDeBienesCUK" class="file__img">
+                        </a>
                     </div>
                     <div class="files__element">
-                        <div class="file__name__container">
-                            <p class="file__name">Reglamento Consejo de Arbitraje CUK 2023</p>
-                        </div>
-                        <div class="file__img__container">
-                            <a href="../pdfs/Reglamento-Consejo-de-Arbitraje-CUK.pdf" target="_blank">
-                                <img src="../imgs/arbitraje.png" alt="arbitraje" class="file__img">
-                            </a>
-                        </div>
+                        <p class="file__name">Reglamento Consejo de Arbitraje CUK 2023</p>
+                        <a class="file__img__container" href="../pdfs/Reglamento-Consejo-de-Arbitraje-CUK.pdf" target="_blank">
+                            <img src="../imgs/arbitraje.png" alt="arbitraje" class="file__img">
+                        </a>
                     </div>
                     <div class="files__element">
-                        <div class="file__name__container">
-                            <p class="file__name">Reglamento General de Arbitraje CUK</p>
-                        </div>
-                        <div class="file__img__container">
-                            <a href="../pdfs/Reglamento-General-de-Arbitraje-CUK.pdf" target="_blank">
-                                <img src="../imgs/juecesArbitros.png" alt="juecesArbitros" class="file__img">
-                            </a>
-                        </div>
+                        <p class="file__name">Reglamento General de Arbitraje CUK</p>
+                        <a class="file__img__container" href="../pdfs/Reglamento-General-de-Arbitraje-CUK.pdf" target="_blank">
+                            <img src="../imgs/juecesArbitros.png" alt="juecesArbitros" class="file__img">
+                        </a>
                     </div>
                     <div class="files__element">
-                        <div class="file__name__container">
-                            <p class="file__name">Reglamento KATA WKF 2023</p>
-                        </div>
-                        <div class="file__img__container">
-                            <a href="../pdfs/WKF_Kata_Competition_Rules_2023.pdf" target="_blank">
-                                <img src="../imgs/wkfReglamentoKata.png" alt="wkfReglamentoKata" class="file__img">
-                            </a>
-                        </div>
+                        <p class="file__name">Reglamento KATA WKF 2023</p>
+                        <a class="file__img__container" href="../pdfs/WKF_Kata_Competition_Rules_2023.pdf" target="_blank">
+                            <img src="../imgs/wkfReglamentoKata.png" alt="wkfReglamentoKata" class="file__img">
+                        </a>
                     </div>
                     <div class="files__element">
-                        <div class="file__name__container">
-                            <p class="file__name">Reglamento KUMITE WKF 2023</p>
-                        </div>
-                        <div class="file__img__container">
-                            <a href="../pdfs/WKF_Kumite_Competition_Rules_2023.pdf" target="_blank">
-                                <img src="../imgs/wkfReglamentoKumite.png" alt="wkfReglamentoKumite" class="file__img">
-                            </a>
-                        </div>
+                        <p class="file__name">Reglamento KUMITE WKF 2023</p>
+                        <a class="file__img__container" href="../pdfs/WKF_Kumite_Competition_Rules_2023.pdf" target="_blank">
+                            <img src="../imgs/wkfReglamentoKumite.png" alt="wkfReglamentoKumite" class="file__img">
+                        </a>
                     </div>
                     <div class="files__element">
-                        <div class="file__name__container">
-                            <p class="file__name">Reglamento KUMITE infantil CUK 2023</p>
-                        </div>
-                        <div class="file__img__container">
-                            <a href="../pdfs/Reglamento-Kumite-infantil-CUK-2023.pdf" target="_blank">
-                                <img src="../imgs/cukReglamento.png" alt="cukReglamento" class="file__img">
-                            </a>
-                        </div>
+                        <p class="file__name">Reglamento KUMITE infantil CUK 2023</p>
+                        <a class="file__img__container" href="../pdfs/Reglamento-Kumite-infantil-CUK-2023.pdf" target="_blank">
+                            <img src="../imgs/cukReglamento.png" alt="cukReglamento" class="file__img">
+                        </a>
                     </div>
                 </div>
             </section>
         </article>
-
         <article class="executive__council">
             <h2 class="article__title">Consejo ejecutivo</h2>
             <table>
@@ -308,18 +266,16 @@
                     </tr>
                 </tbody>
             </table>
-
         </article>
-
         <article class="deportist__card">
             <h2 class="article__title">Carnet del deportista</h2>
-            <section class="desportist__card__description">
+            <section class="deportist__card__description">
                 <p>El trámite debe realizarse a través de la web según Ley Ley Nº 18719: <a
                         href="https://www.gub.uy/tramites/carne-deportista">https://www.gub.uy/tramites/carne-deportista</a>
                 </p>
                 <p>La Entidad Afiliada solicitará a la CUK la nota oficial que dicho trámite le exige.</p>
             </section>
-            <section class="desportist__card__content">
+            <section class="deportist__card__content">
                 <table>
                     <thead>
                         <tr>
@@ -567,11 +523,8 @@
                 </table>
             </section>
         </article>
-
         <article class="school">
-
             <div class="school__img"></div>
-
             <section class="faq">
                 <h3 class="faq__title">Preguntas Frecuentes</h3>
                 <div class="faq__container">
@@ -579,7 +532,6 @@
                     <div class="faq__content">
                         <p>Las clases son dirigidas a niños de 6 a 12 años.</p>
                     </div>
-
                 </div>
                 <div class="faq__container">
                     <h4 class="question__title">¿Cuándo y cuánto duran las clases?</h4>
@@ -587,58 +539,50 @@
                         <p>Las clases tendrán una duración de una 1 hora, los lunes y miércoles en los siguientes
                             horarios:</p>
                         <ul>
-                            <li>17:30 a 18:30 hrs.</li>
-                            <li>18:30 a 19:30 hrs.</li>
+                            <li>- 17:30 a 18:30 hrs.</li>
+                            <li>- 18:30 a 19:30 hrs.</li>
                         </ul>
                         <p>Según cupos y confirmación.</p>
                     </div>
-
                 </div>
                 <div class="faq__container">
                     <h4 class="question__title">¿Qué necesita el alumno para la clase?</h4>
                     <div class="faq__content">
                         <p>Debe concurrir al Centro de entrenamiento con ropa cómoda y una botella de agua.</p>
                     </div>
-
                 </div>
                 <div class="faq__container">
                     <h4 class="question__title">¿Cómo es el proceso de inscripción?</h4>
                     <div class="faq__content">
                         <p>Enviando por WhatsApp:</p>
                         <ul>
-                            <li>Foto del carnet pediátrico.</li>
-                            <li>Cédula de identidad.</li>
+                            <li>- Foto del carnet pediátrico.</li>
+                            <li>- Cédula de identidad.</li>
                         </ul>
                     </div>
-
                 </div>
                 <div class="faq__container">
                     <h4 class="question__title">¿Cuando comienzas las clases?</h4>
                     <div class="faq__content">
                         <p>Las clases empiezan el 8 de Marzo.</p>
                     </div>
-
                 </div>
                 <div class="faq__container">
                     <h4 class="question__title">¿Dónde esta ubicado el Centro de Combate?</h4>
                     <div class="faq__content">
                         <p>El CEDEC se ubica en Bvr. Batlle y Ordoñez 2326, Montevideo.</p>
                     </div>
-
                 </div>
                 <div class="faq__container">
                     <h4 class="question__title">¿Tiene algún costo?</h4>
                     <div class="faq__content">
                         <p>No, las clases son completamente GRATUITAS</p>
                     </div>
-
                 </div>
             </section>
-        </article>
-
+        </article>  
     </main>
-
-    <footer>
+    <footer class="footer">
         <div class="footer__container">
             <p class="copyRight">&copy; COPYRIGHT 2022 - CUK.ORG.UY</p>
             <div class="footer__line"></div>
@@ -656,7 +600,6 @@
             </defs>
         </svg>
     </footer>
-
+    <script src="../js/header.js"></script>
 </body>
-
 </html>

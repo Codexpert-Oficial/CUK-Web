@@ -1,0 +1,69 @@
+
+.executive__council,
+.deportist__card {
+    width: 100%;
+    margin: 0 20px;
+}
+
+table {
+    margin: 0 auto;
+    background-color: rgba(26, 143, 245, 0.474);
+    backdrop-filter: blur(3px);
+    font-size: 25px;
+    font-family: system-ui;
+    border-radius: 20px;
+    color: aliceblue;
+    padding: 20px;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.308);
+    max-width: 1200px;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+th {
+    background-color: rgba(55, 132, 225, 0.703);
+}
+
+td {
+    background-color: rgba(70, 148, 242, 0.703);
+}
+
+
+@media (max-width: 900px) {
+
+    table {
+        font-size: 18px;
+        border-radius: 15px;
+        padding: 15px;
+        max-width: 600px;
+    }
+
+    th,
+    td {
+        padding: 12px;
+        border-radius: 5px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    table {
+        font-size: 16px;
+        border-radius: 12px;
+        padding: 12px;
+        max-width: 400px;
+        width: 90%;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        border-radius: 5px;
+    }
+}

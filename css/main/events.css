@@ -4,13 +4,13 @@
   align-items: center;
   justify-content: center;
   font-family: system-ui;
-  padding: 100px 0;
 }
 
 .next__events__title {
   font-size: 70px;
   text-transform: uppercase;
   color: aliceblue;
+  text-align: center;
 }
 
 .calendar__container {
@@ -70,11 +70,13 @@
 .calendar__arrow {
   color: rgba(240, 248, 255, 0.752);
   padding-top: 10px;
+  width: 50px;
+  height: 50px;
 }
 
 .calendar__content {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden;
 }
 
@@ -82,6 +84,7 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   background-color: rgb(216, 224, 231);
+  gap: 2px;
 }
 
 .calendar__days__container {
@@ -136,6 +139,7 @@
   padding: 5px;
   border-radius: 5px;
   font-size: 14px;
+  text-align: center;
 }
 
 .calendar__events__container {
@@ -179,4 +183,197 @@
 .event__location,
 .event__date {
   margin: 5px 0;
+}
+
+@media (max-width: 1200px) {
+
+  .next__events__title { 
+    font-size: 7vw;
+  }
+  
+  .calendar__container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin: 40px;
+    max-width: 900px;
+  }
+
+  .calendar {
+    padding: 5px;
+    grid-column: 1;
+  }
+
+
+  .calendar__events__container {
+    grid-column: 3;
+    max-width: 250px;
+    gap: 30px;
+  }
+
+  .calendar__event {
+    box-sizing: border-box;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .calendar__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calendar__events__container { 
+    max-width: 100%;
+  }
+
+  .calendar__event { 
+    width: 100%;
+  }
+
+  .calendar__event__title {
+    margin: 15px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .next__events__title {
+    font-size: 35px;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .ganchos {
+    margin-top: -30px;
+    padding: 0 60px;
+  }
+
+  .gancho {
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+  }
+
+  .calendar__top {
+    padding: 15px;
+  }
+
+  .calendar__month__name {
+    font-size: 40px;
+  }
+
+  .calendar__arrow {
+    width: 35px;
+    height: 35px;
+  }
+
+  .calendar__day__name,
+  .calendar__day {
+    height: 50px;
+    width: 50px;
+    font-size: 17px;
+  }
+
+  .calendar__day {
+    font-size: 17px;
+  }
+
+  .calendar__day__name {
+    height: 50px;
+    font-size: 17px;
+  }
+
+  .event__day {
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+  }
+
+  .event__day:hover:after {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .calendar__container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin: 40px;
+    max-width: 300px;
+  }
+
+  .calendar {
+    border-radius: 15px;
+  }
+
+  .ganchos {
+    margin-top: -30px;
+    padding: 0 60px;
+  }
+
+  .gancho {
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+  }
+
+  .calendar__top {
+    padding: 15px;
+  }
+
+  .calendar__content {
+    border-radius: 10px;
+  }
+
+  .calendar__month__name {
+    font-size: 25px;
+  }
+
+  .calendar__arrow {
+    width: 25px;
+    height: 25px;
+  }
+
+  .calendar__day__name,
+  .calendar__day {
+    height: 35px;
+    width: 35px;
+    font-size: 15px;
+  }
+
+  .calendar__day {
+    font-size: 15px;
+  }
+
+  .calendar__day__name {
+    height: 35px;
+    font-size: 15px;
+  }
+
+  .event__day {
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+  }
+
+  .event__day:hover:after {
+    font-size: 12px;
+  }
+  
+  .calendar__event__title {
+    font-size: 18px;
+  }
+
+  .event__location,
+  .event__date { 
+    font-size: 16px;
+  }
+
 }

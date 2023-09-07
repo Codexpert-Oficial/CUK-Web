@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +11,7 @@
     <link rel="stylesheet" href="../css/main/start.css">
     <link rel="stylesheet" href="../css/main/news.css">
 </head>
-
 <body>
-
     <header>
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"
             class="header__background">
@@ -27,12 +24,11 @@
                 </linearGradient>
             </defs>
         </svg>
-        <section class="header__container">
-
+        <nav class="header__container">
             <a href='' class="header__logo">
                 <img src="../imgs/logo.png" class="header__logo__img" alt="logo CUK">
             </a>
-            <nav class="header__nav">
+            <div class="header__nav">
                 <ul class="header__links__container">
                     <li>
                         <a href="index.html" class="header__link">Inicio</a>
@@ -50,20 +46,30 @@
                         <a href="championships.html" class="header__link">Campeonatos</a>
                     </li>
                     <li>
-                        <a href="" class="header__link">Noticias</a>
+                        <a href="news.html" class="header__link">Noticias</a>
                     </li>
                 </ul>
-            </nav>
-        </section>
+                <div class="header__nav__bars__container">
+                    <svg class="header__nav__open__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                    <svg class="header__nav__close__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                </div>
+                <div class="header__nav__close__container">                    
+                </div>
+            </div>
+        </nav>
     </header>
-
     <main>
         <article class="start" id="news__start">
             <section class="start__content start__content-center">
                 <h1 class="start__title">Noticias</h1>
             </section>
         </article>
-
         <article class="news">
             <section class="new">
                 <h3 class="new__title">La Confederación Uruguaya de Karate felicita a Joel Mókosce</h3>
@@ -80,7 +86,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="new">
                 <h3 class="new__title">TAKUYA MAKITA, Sensei en Uruguay</h3>
                 <div class="new__img" id="new2">
@@ -96,7 +101,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="new">
                 <h3 class="new__title">Seminario IOSTK Internacional</h3>
                 <div class="new__img" id="new3">
@@ -112,7 +116,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="new">
                 <h3 class="new__title">Lanzamiento del Libro: MANUAL DE KARATE-DO “El Arte de la No Violencia”</h3>
                 <div class="new__img" id="new4">
@@ -128,7 +131,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="new">
                 <h3 class="new__title">Jornada de Actividades e Intercambios a cara a un nuevo 8 de Marzo</h3>
                 <div class="new__img" id="new5">
@@ -144,7 +146,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="new">
                 <h3 class="new__title">2do Torneo Nacional de Fullcontact Karate</h3>
                 <div class="new__img" id="new6">
@@ -160,7 +161,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="new">
                 <h3 class="new__title">Karate Tradicional Campeonato Apertura 2023</h3>
                 <div class="new__img" id="new7">
@@ -176,7 +176,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="new">
                 <h3 class="new__title">Panamericano 2024 en Punta del Este</h3>
                 <div class="new__img" id="new8">
@@ -192,7 +191,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="new">
                 <h3 class="new__title">Curso Avanzado de Gestión Deportiva</h3>
                 <div class="new__img" id="new9">
@@ -208,7 +206,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="new">
                 <h3 class="new__title">Juegos Panamericanos 2023</h3>
                 <div class="new__img" id="new10">
@@ -224,7 +221,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="new">
                 <h3 class="new__title">PIN DE ORO - SENADOR DE LA REPÚBLICA EC. SERGIO BOTANA</h3>
                 <div class="new__img" id="new11">
@@ -240,7 +236,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="new">
                 <h3 class="new__title">Campeonato Panamericano de Karate en Uruguay</h3>
                 <div class="new__img" id="new12">
@@ -256,7 +251,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="new">
                 <h3 class="new__title">Escuela de Karate</h3>
                 <div class="new__img" id="new13">
@@ -273,10 +267,8 @@
                 </div>
             </section>
         </article>
-
     </main>
-
-    <footer>
+    <footer class="footer">
         <div class="footer__container">
             <p class="copyRight">&copy; COPYRIGHT 2022 - CUK.ORG.UY</p>
             <div class="footer__line"></div>
@@ -294,7 +286,6 @@
             </defs>
         </svg>
     </footer>
-
+    <script src="../js/header.js"></script>
 </body>
-
 </html>
