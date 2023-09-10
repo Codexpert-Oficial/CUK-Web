@@ -8,26 +8,34 @@ body {
   overflow-x: hidden;
 }
 
+
 body::-webkit-scrollbar {
-  width: 8px;
+  -webkit-appearance: none;
+  background: rgb(156, 156, 255);
+}
+
+body::-webkit-scrollbar:vertical {
+  width:12px;
+}
+
+body::-webkit-scrollbar-button:increment,body::-webkit-scrollbar-button {
+  display: none;
+} 
+
+body::-webkit-scrollbar:horizontal {
+  height: 12px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: rgba(70, 148, 242, 0.703);
-  border-radius: 10px;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-  background: rgba(70, 147, 242, 0.856);
-}
-
-body::-webkit-scrollbar-thumb:active {
-  background: rgb(70, 147, 242);
+  background-color: rgb(90, 90, 255);
+  border-radius: 20px;
+  border: 2px solid rgb(156, 156, 255);
 }
 
 body::-webkit-scrollbar-track {
-  background: #1864FC;
+  border-radius: 10px;  
 }
+
 
 main {
   display: flex;

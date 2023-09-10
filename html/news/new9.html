@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +10,7 @@
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/new.css">
 </head>
-
 <body>
-
     <header>
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"
             class="header__background">
@@ -26,12 +23,11 @@
                 </linearGradient>
             </defs>
         </svg>
-        <section class="header__container">
-
-            <a href='' class="header__logo">
+        <nav class="header__container">
+            <a href='../index.html' class="header__logo">
                 <img src="../../imgs/logo.png" class="header__logo__img" alt="logo CUK">
             </a>
-            <nav class="header__nav">
+            <div class="header__nav">
                 <ul class="header__links__container">
                     <li>
                         <a href="../index.html" class="header__link">Inicio</a>
@@ -43,7 +39,7 @@
                         <a href="../affiliates.html" class="header__link">Afiliadas</a>
                     </li>
                     <li>
-                        <a href="../../php/gallery.php" class="header__link">Galeria</a>
+                        <a href="../../php/gallery.php" class="header__link">Galería</a>
                     </li>
                     <li>
                         <a href="../championships.html" class="header__link">Campeonatos</a>
@@ -52,10 +48,21 @@
                         <a href="../news.html" class="header__link">Noticias</a>
                     </li>
                 </ul>
-            </nav>
-        </section>
+                <div class="header__nav__bars__container">
+                    <svg class="header__nav__open__icon" xmlns="http://www.w3.org/2000/svg" height="54px" viewBox="0 0 448 512">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                    <svg class="header__nav__close__icon" xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 0 384 512">
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                </div>
+                <div class="header__nav__close__container">                    
+                </div>
+            </div>
+        </nav>
     </header>
-
     <main>
         <article class="new">
             <h1 class="new__title">Curso Avanzado de Gestión Deportiva</h1>
@@ -69,17 +76,14 @@
                     habilidades y herramientas necesarias que permitan un mejor desarrollo de gestión en los sistemas
                     organizativos.</p>
             </div>
-
             <div class="new__imgs__container">
                 <img src="../../imgs/new9.jpeg" alt="noticia" class="new__img">
                 <img src="../../imgs/new9-img1.jpeg" alt="noticia" class="new__img">
                 <img src="../../imgs/new9-img2.jpeg" alt="noticia" class="new__img">
             </div>
-
         </article>
     </main>
-
-    <footer>
+    <footer class="footer">
         <div class="footer__container">
             <p class="copyRight">&copy; COPYRIGHT 2022 - CUK.ORG.UY</p>
             <div class="footer__line"></div>
@@ -97,7 +101,6 @@
             </defs>
         </svg>
     </footer>
-
+    <script src="../../js/header.js"></script>
 </body>
-
 </html>

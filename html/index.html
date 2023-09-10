@@ -337,7 +337,7 @@
         <article class="contact">
             <section class="contact__container">
                 <h3 class="contact__title">Contacto</h3>
-                <form class="contact__form" action="" method="POST">
+                <form class="contact__form" action="https://formsubmit.co/oficial.codexpert@gmail.com" method="POST">
                     <input type="text" name="name" class="contact__input" id="contact__name" placeholder="Nombre"
                         required>
                     <input type="email" name="email" class="contact__input" id="contact__email" placeholder="Email"
@@ -347,6 +347,10 @@
                     <div class="contact__submit__container">
                         <input type="submit" class="contact__submit" value="Enviar">
                     </div>
+
+                    <input type="hidden" name="_next" value="http://localhost/CUK-Web/html/contactSubmited.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
                 </form>
                 <div class="contact__info">
                     <div class="contact__text__container">

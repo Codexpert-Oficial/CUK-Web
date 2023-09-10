@@ -1,34 +1,50 @@
-.new {
+
+body {
+  position: relative;
   min-height: 100vh;
-  margin-top: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.new {
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 100px;
   font-family: system-ui;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 0 200px 0;
+  padding: 200px 100px;
+  box-sizing: border-box;
 }
 
 .new__title {
+  width: 90%;
+  max-width: 1000px;
   color: aliceblue;
-  font-size: 35px;
+  font-size: 45px;
   text-align: center;
   margin: 0;
 }
 
 .new__line {
-  width: 900px;
+  width: 70%;
+  min-width: 500px;
+  max-width: 900px;
   height: 2px;
   background-color: rgb(228, 232, 235);
   border-radius: 5px;
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 .new__description {
-  color: rgba(228, 232, 235, 0.72);
-  font-size: 20px;
+  width: 100%;
   max-width: 900px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: rgba(228, 232, 235, 0.72);
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -39,36 +55,85 @@
 }
 
 .new__imgs__container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 0 100px 100px 100px;
 }
 
 .new__imgs__smalls {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  max-width: 50%;
+  max-width: 1000px;
   justify-content: center;
 }
 
-.new__img {
-  width: 900px;
+.new__img, .new__img__big, .new__img__small {
+  width: 100%;
+  max-width: 1000px;
   border-radius: 15px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.283);
 }
 
-.new__img__big {
-  max-height: 90vh;
-  border-radius: 15px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.283);
+
+@media (max-width: 900px) {
+
+  .new {
+    padding: 100px 50px;
+  }
+
+  .new__title {
+    font-size: 35px;
+  }
+  
+  .new__description p {
+    font-size: 18px;
+  }
+
+  .new__line {
+    width: 70%;
+    min-width: 250px;
+    max-width: 900px;
+  }
+
 }
 
-.new__img__small {
-  height: 250px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.283);
+@media (max-width: 600px) {
+
+  .new {
+    margin: 0;
+  }
+
+  .new__description p {
+    text-align: center;
+  }
+
+  .footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+  }
+
 }
+
+@media (max-width: 400px) {
+
+  .new__title {
+    font-size: 28px;
+  }
+
+  .new__line {
+    margin: 20px;
+  }
+
+  .new__description p {
+    font-size: 16px;
+  }
+
+}
+
+
