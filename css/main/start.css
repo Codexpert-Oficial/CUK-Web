@@ -1,88 +1,136 @@
+
+@font-face {
+  font-family: Chivo-bold;
+  src: url(../../fonts/Chivo/Chivo-Bold.ttf);
+}
+
+@font-face {
+  font-family: Inter-regular;
+  src: url(../../fonts/Inter/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter-medium;
+  src: url(../../fonts/Inter/Inter-Medium.ttf);
+}
+
 .start {
-  background-image: url("../../imgs/background.png");
-  background-color: #0e5095;
-  background-size: cover;
-  background-attachment: fixed;
+  position: relative;
+  width: calc(100%);
   height: 100vh;
-  max-height: 1080px;
+  max-height: 1000px;
+  background-image: url(../../imgs/background/start-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.start__content__container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  font-family: system-ui;
-  width: 100%;
+  padding: 0 30px;
 }
 
-#institutional__start {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgb(0, 0, 0)),
-    url("../../imgs/institutionalBackground.webp");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
-#affiliates__start {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgb(0, 0, 0)),
-    url("../../imgs/affiliatesBackground.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
-#gallery__start {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgb(0, 0, 0)),
-    url("../../imgs/galleryBackground.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
-#championships__start {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgb(0, 0, 0)),
-    url("../../imgs/campionshipsBackground.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
-#news__start {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgb(0, 0, 0)),
-    url("../../imgs/newsBackground.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
-.start__content {
+.start__data__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  margin-left: 400px;
+  gap: 15px;
 }
 
-.start__content-center {
-  margin-left: 0;
-}
-
-.start__title-CUK, .start__title {
-  letter-spacing: -2px;
-  font-size: 70px;
-  color: rgb(255, 255, 255);
-  margin: 0;
-  text-shadow: 0 0 50px rgb(0, 0, 0);
+.start__data__title {
+  font-family: Chivo-bold;
+  font-size: 80px;
   text-transform: uppercase;
-  max-width: 1300px;
-  text-align: center;
+  letter-spacing: -3px;
+  line-height: 80px;
+  width: 835px;
+  margin: 0;
+  color: var(--primary-text-color);
 }
 
-.start__text {
+.start__data__description {
+  color: var(--secondary-text-color);
+  width: 720px;
+  margin: 0;
+  font-family: Inter-regular;
   font-size: 25px;
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 30px rgb(0, 0, 0);
-  max-width: 800px;
-  text-align: center;
 }
+
+.start__data__link {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0 0;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: black;
+  background: var(--secondary-bg-color);
+  border-radius: 5px;
+  width: 150px;
+  font-family: Inter-medium;
+  font-size: 25px;
+}
+
+.start__data__link:hover {
+  filter: brightness(1.3);
+}
+
+.start__news__container {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 15px;
+  height: 650px;
+}
+
+.start__new {
+  width: 215px;
+  height: 140px;
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid #909090;
+}
+
+.start__new__img {
+  width: 215px;
+  height: 140px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  filter: brightness(0.2);
+}
+
+.start__new__img:hover {
+  cursor: pointer;
+  filter: brightness(0.5);
+}
+
+.start__sliderBars__container {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.start__sliderBar__element {
+  background: var(--primary-text-color);
+  filter: brightness(0.5);
+  width: 60px;
+  height: 7px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.start__sliderBar__element:hover,
+.start__sliderBar__element-active {
+  filter: brightness(1);
+}
+
+
+/*
 
 
 @media (max-width: 1200px) {
@@ -127,3 +175,5 @@
   }
 
 }
+
+*/

@@ -1,21 +1,19 @@
-.next__events {
+.events {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: system-ui;
+  gap: 30px;
+  padding: 100px 0;
 }
 
-.next__events__title {
-  font-size: 70px;
-  text-transform: uppercase;
-  color: aliceblue;
-  text-align: center;
+.events__title {
+  margin: 20px;
 }
 
 .calendar__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  align-items: center;
   gap: 30px;
   margin: 40px;
 }
@@ -24,14 +22,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: aliceblue;
   border-radius: 20px;
   padding: 5px;
-  background-color: rgba(59, 169, 247, 0.412);
+  background-color: var(--primary-bg-color);
   backdrop-filter: blur(5px);
   box-sizing: border-box;
-  grid-column: 2;
-  height: fit-content;
 }
 
 .ganchos {
@@ -47,13 +42,13 @@
 .gancho {
   width: 30px;
   height: 60px;
-  background-color: rgb(235, 219, 104);
+  background-color: rgb(180, 164, 39);
   border-radius: 30px;
 }
 
 .calendar__top {
   width: 100%;
-  padding: 15px;
+  padding: 30px 25px 25px 25px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -62,16 +57,22 @@
 
 .calendar__month__name {
   font-size: 60px;
-  color: rgba(240, 248, 255, 0.752);
+  font-family: Inter-bold;
+  color: var(--primary-text-color);
   text-transform: uppercase;
   margin: 0;
 }
 
 .calendar__arrow {
-  color: rgba(240, 248, 255, 0.752);
+  color: var(--primary-text-color);
   padding-top: 10px;
   width: 50px;
   height: 50px;
+  cursor: pointer;
+}
+
+.calendar__arrow:hover {
+  filter: brightness(1.2);
 }
 
 .calendar__content {
@@ -83,8 +84,14 @@
 .calendar__day__names__container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  background-color: rgb(216, 224, 231);
-  gap: 2px;
+  background-color: var(--primary-mode-color);
+  gap: 3px;
+}
+
+.calendar__day__name {
+  height: 70px;
+  font-size: 20px;
+  background-color: var(--primary-mode-color);
 }
 
 .calendar__days__container {
@@ -92,12 +99,13 @@
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(6, 1fr);
   box-sizing: border-box;
-  grid-gap: 2px;
-  background-color: white;
+  gap: 3px;
 }
 
 .calendar__day__name,
 .calendar__day {
+  color: var(--secondary-text-color);
+  font-family: Inter-medium;
   height: 75px;
   display: flex;
   justify-content: center;
@@ -107,18 +115,12 @@
 }
 
 .calendar__day {
-  background-color: rgb(225, 235, 248);
+  background-color: var(--secondary-mode-color);
   font-size: 25px;
 }
 
-.calendar__day__name {
-  height: 70px;
-  font-size: 20px;
-  background-color: rgb(216, 224, 231);
-}
-
 .event__day {
-  background-color: rgb(35, 142, 237);
+  background-color: var(--primary-bg-color);
   width: 55px;
   height: 55px;
   line-height: 25px;
@@ -126,7 +128,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(233, 237, 240);
   cursor: pointer;
 }
 
@@ -135,15 +136,14 @@
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
   transform: translateY(50px);
-  color: white;
-  padding: 5px;
+  color: var(--secondary-text-color);
+  padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
   text-align: center;
 }
 
 .calendar__events__container {
-  grid-column: 3;
   max-width: 250px;
   display: flex;
   flex-direction: column;
@@ -151,8 +151,7 @@
 }
 
 .calendar__event {
-  background-color: rgba(59, 169, 247, 0.412);
-  backdrop-filter: blur(5px);
+  background-color: var(--primary-bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,7 +161,8 @@
 }
 
 .calendar__event__top {
-  color: rgba(240, 248, 255, 0.752);
+  color: var(--primary-text-color);
+  font-family: Inter-bold;
   font-size: 25px;
 }
 
@@ -172,18 +172,23 @@
 }
 
 .calendar__event__content {
-  background-color: rgba(37, 147, 250, 0.624);
-  border-radius: 20px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 16px;
+  padding: 5px 0;
   width: 100%;
   text-align: center;
-  color: rgb(240, 248, 255);
   font-size: 20px;
 }
 
 .event__location,
 .event__date {
   margin: 5px 0;
+  color: var(--secondary-text-color);
+  font-family: Inter-medium;
+  font-size: 18px;
 }
+
+/*
 
 
 @media (max-width: 1200px) {
@@ -378,3 +383,5 @@
   }
 
 }
+
+*/
