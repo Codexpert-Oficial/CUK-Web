@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Chivo-bold;
+    src: url(../fonts/Chivo/Chivo-Bold.ttf);
+}
+
+@font-face {
+    font-family: Inter-regular;
+    src: url(../fonts/Inter/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter-medium;
+    src: url(../fonts/Inter/Inter-Medium.ttf);
+}
+
+.start {
+    position: relative;
+    width: calc(100%);
+    height: 100vh;
+    max-height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.start-institutional {
+    background-image: url(../imgs/background/institutional-background.png);
+}
+
+.start-galery {
+    background-image: url(../imgs/background/galery-background.png);
+}
+
+.start-championships {
+    background-image: url(../imgs/background/championships-background.png);
+}
+
+.start-news {
+    background-image: url(../imgs/background/news-background.png);
+}
+
+.start__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    max-height: 1000px;
+    box-sizing: border-box;
+}
+
+.start__title {
+    font-family: Chivo-bold;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    line-height: 80px;
+    margin: 0;
+    color: var(--secondary-text-color);
+}
+
+.start__description {
+    font-family: Inter-regular;
+    font-size: 25px;
+    letter-spacing: -1px;
+    width: 730px;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+.start__knowMore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Chivo-bold;
+    font-size: 20px;
+    color: var(--secondary-text-color);
+    gap: 10px;
+}
+
+.start__knowMore:hover > .start__knowMore__icon {
+    transform: translateY(10px);
+}
+
+.start__knowMore__icon {
+    width: 28px;
+    height: 12px;
+    fill: var(--secondary-text-color);
+    transition: 0.3s transform ease;
+}
+
+.start__goBack__container {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+
+.start__goBack {
+    display: flex;
+    align-items: center;
+    font-family: Chivo-bold;
+    font-size: 20px;
+    color: var(--secondary-text-color);
+    gap: 10px;
+}
+
+.start__goBack__icon {
+    width: 12px;
+    height: 18px;   
+    fill: var(--secondary-text-color);
+}
+
+.start__socialMedia__container {    
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    right: 40px;
+    bottom: 40px;
+}
+
+.start__socialMedia__icon {
+    width: 30px;
+    height: 30px;
+    fill: var(--secondary-text-color);
+}

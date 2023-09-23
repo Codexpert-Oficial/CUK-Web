@@ -131,7 +131,7 @@
   cursor: pointer;
 }
 
-.event__day:hover:after {
+.event__day:hover::after {
   content: attr(data-description);
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);

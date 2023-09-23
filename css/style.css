@@ -10,11 +10,13 @@
   --primary-bg-color: rgb(17, 73, 114);
   --secondary-bg-color: rgba(15, 145, 210, 0.5);
   --third-bg-color: rgba(15, 145, 210, 0.3);
+  --fourth-bg-color: rgb(45, 102, 142);
 
   --primary-mode-color: rgb(33, 33, 33); /* dark mode */
   --secondary-mode-color: rgb(40, 40, 40); /* dark mode */
   --third-mode-color: rgb(58, 57, 57); /* dark mode */
   --fourth-mode-color: rgb(20, 20, 20); /* dark mode */
+  --fifth-mode-color: rgba(0, 0, 0, 0.3); /* dark mode */
 
   --primary-mode-color-contrast: rgb(230, 230, 230); /* dark mode */
 
@@ -88,8 +90,9 @@ article {
   font-family: Chivo-bold;
   font-size: 100px;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: -3px;
-  line-height: 100px; 
+  line-height: 100px;
   color: var(--primary-text-color);
   display: flex;
   align-items: center;
