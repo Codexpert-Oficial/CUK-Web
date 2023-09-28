@@ -1,5 +1,22 @@
 
+@font-face {
+  font-family: Chivo-bold;
+  src: url(../fonts/Chivo/Chivo-Bold.ttf);
+}
+
+@font-face {
+  font-family: Inter-regular;
+  src: url(../fonts/Inter/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter-medium;
+  src: url(../fonts/Inter/Inter-Medium.ttf);
+}
+
+
 body {
+  width: 100vw;
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -10,22 +27,29 @@ body {
 .new {
   max-width: 1200px;
   width: 100%;
+  min-height: 100vh;
   margin-top: 100px;
-  font-family: system-ui;
+  font-family: Inter-regular;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 200px 100px;
+  padding: 100px;
   box-sizing: border-box;
+}
+
+.new-background {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),  url(../imgs/background/news-background.png) center/cover no-repeat;
 }
 
 .new__title {
   width: 90%;
   max-width: 1000px;
-  color: aliceblue;
+  font-family: Chivo-bold;
+  color: var(--primary-text-color);
   font-size: 45px;
   text-align: center;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -34,7 +58,7 @@ body {
   min-width: 500px;
   max-width: 900px;
   height: 2px;
-  background-color: rgb(228, 232, 235);
+  background-color: var(--primary-text-color);
   border-radius: 5px;
   margin: 30px 0;
 }
@@ -44,7 +68,7 @@ body {
   max-width: 900px;
   margin-bottom: 30px;
   font-size: 20px;
-  color: rgba(228, 232, 235, 0.72);
+  color: var(--secondary-text-color);
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -61,6 +85,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  filter: brightness(0.6);
 }
 
 .new__imgs__smalls {

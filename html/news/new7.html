@@ -11,85 +11,109 @@
     <link rel="stylesheet" href="../../css/new.css">
 </head>
 <body>
-    <header>
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"
-            class="header__background">
-            <path d="M-3.10,94.25 C132.89,99.19 64.05,41.95 500.27,58.72 L500.00,0.00 L0.00,0.00 Z"
-                style="stroke: none; fill: url(#gradient__header);"></path>
-            <defs>
-                <linearGradient id="gradient__header">
-                    <stop offset="5%" stop-color="#3396FF" />
-                    <stop offset="95%" stop-color="#1864FC" />
-                </linearGradient>
-            </defs>
-        </svg>
-        <nav class="header__container">
-            <a href='../index.html' class="header__logo">
-                <img src="../../imgs/logo.png" class="header__logo__img" alt="logo CUK">
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__elements__container">
+                <li class="nav__element">
+                    <a href="../index.html" class="nav__element__link">Inicio</a>
+                </li>
+                <li class="nav__element">
+                    <a href="../institutional.html" class="nav__element__link">Institucional</a>
+                </li>
+                <li class="nav__element">
+                    <a href="../../php/gallery.php" class="nav__element__link">Galería</a>
+                </li>
+                <li class="nav__element">
+                    <a href="../championships.html" class="nav__element__link">Campeonatos</a>
+                </li>
+                <li class="nav__element">
+                    <a href="../news.html" class="nav__element__link">Noticias</a>
+                </li>
+            </ul>
+            <a class="nav__logo__container" href="../index.html">
+                <img src="../../imgs/logos/logo.png" alt="CUK-Logo" class="nav__logo">
             </a>
-            <div class="header__nav">
-                <ul class="header__links__container">
-                    <li>
-                        <a href="../index.html" class="header__link">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="../institutional.html" class="header__link">Institucional</a>
-                    </li>
-                    <li>
-                        <a href="../affiliates.html" class="header__link">Afiliadas</a>
-                    </li>
-                    <li>
-                        <a href="../../php/gallery.php" class="header__link">Galería</a>
-                    </li>
-                    <li>
-                        <a href="../championships.html" class="header__link">Campeonatos</a>
-                    </li>
-                    <li>
-                        <a href="../news.html" class="header__link">Noticias</a>
-                    </li>
-                </ul>
-                <div class="header__nav__bars__container">
-                    <svg class="header__nav__open__icon" xmlns="http://www.w3.org/2000/svg" height="54px" viewBox="0 0 448 512">
-                        <path
-                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-                    </svg>
-                    <svg class="header__nav__close__icon" xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 0 384 512">
-                        <path
-                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
-                    </svg>
-                </div>
-                <div class="header__nav__close__container">                    
-                </div>
-            </div>
         </nav>
     </header>
-    <main>
+    <main class="new-7 new-background">
         <article class="new">
             <h1 class="new__title">Karate Tradicional Campeonato Apertura 2023</h1>
             <div class="new__line"></div>
+            <div class="new__description">
+                <p>
+                    Exhibiciones de artes marciales, Campeonato Apertura 2023 y Festival Infantil Dangai el 16 de abril en La Par. Entrada libre.
+                </p>
+            </div>
             <div class="new__imgs__container">
-                <img src="../../imgs/new7.jpeg" alt="noticia" class="new__img__big">
-                <img src="../../imgs/new7-img1.jpeg" alt="noticia" class="new__img__big">
+                <img src="../../imgs/news/new7.jpeg" alt="noticia" class="new__img__big">
+                <img src="../../imgs/news/new7-img1.jpeg" alt="noticia" class="new__img__big">
             </div>
         </article>
     </main>
     <footer class="footer">
-        <div class="footer__container">
-            <p class="copyRight">&copy; COPYRIGHT 2022 - CUK.ORG.UY</p>
-            <div class="footer__line"></div>
-            <a href="" class="codexpert__link">Desarrollado por Codexpert</a>
-        </div>
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"
-            class="footer__background">
-            <path d="M-3.10,94.25 C132.89,99.19 64.05,41.95 500.27,58.72 L500.00,0.00 L0.00,0.00 Z"
-                style="stroke: none; fill: url(#gradient__footer);"></path>
-            <defs>
-                <linearGradient id="gradient__footer">
-                    <stop offset="5%" stop-color="#3396FF" />
-                    <stop offset="95%" stop-color="#1864FC" />
-                </linearGradient>
-            </defs>
-        </svg>
+        <section class="footer__content__container">
+            <ul class="footer__content__links">
+                <li class="footer__content__link"><a href="">Afiliadas</a></li>
+                <li class="footer__content__link"><a href="">Jueces 2022-2024</a></li>
+                <li class="footer__content__link"><a href="">Cuerpo técnico</a></li>
+                <li class="footer__content__link"><a href="">Ranking 2022</a></li>
+                <li class="footer__content__link"><a href="">Campeones Nacionales 2022</a></li>
+            </ul>
+            <div class="footer__content__middle">
+                <img class="footer__content__middle__logo" src="../../imgs/logos/logo.png" alt="logo cuk">
+                <ul class="footer__content__middle__socialMedia__container">
+                    <li class="footer__contact__middle__socialMedia__element">
+                        <a href="">
+                            <svg width="48" height="46" viewBox="0 0 48 46" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M40.0507 6.68438C35.6988 2.37187 29.9033 0 23.7442 0C11.0313 0 0.686597 10.2268 0.686597 22.7946C0.686597 26.8094 1.746 30.7317 3.76094 34.192L0.489258 46L12.7139 42.8272C16.0791 44.6446 19.8701 45.5996 23.7338 45.5996H23.7442C36.4466 45.5996 47.0199 35.3728 47.0199 22.8049C47.0199 16.7161 44.4025 10.9969 40.0507 6.68438ZM23.7442 41.7594C20.2959 41.7594 16.9204 40.8455 13.9811 39.1205L13.2852 38.7098L6.03554 40.5888L7.96739 33.5964L7.5104 32.8777C5.58893 29.8589 4.58146 26.3781 4.58146 22.7946C4.58146 12.3522 13.1813 3.85045 23.7546 3.85045C28.875 3.85045 33.6839 5.82188 37.2983 9.40536C40.9127 12.9888 43.1354 17.7429 43.125 22.8049C43.125 33.2576 34.307 41.7594 23.7442 41.7594ZM34.2551 27.5692C33.6839 27.2817 30.8484 25.9058 30.3187 25.721C29.789 25.5259 29.4047 25.4335 29.0204 26.0085C28.6361 26.5835 27.5352 27.8567 27.1924 28.2469C26.8601 28.6268 26.5173 28.6781 25.9461 28.3906C22.5601 26.717 20.3375 25.4027 18.1044 21.6138C17.5124 20.6076 18.6964 20.6795 19.7974 18.5027C19.9843 18.1228 19.8909 17.7942 19.7455 17.5067C19.6 17.2192 18.4472 14.4161 17.9694 13.2763C17.502 12.1674 17.0242 12.3214 16.6711 12.3009C16.3387 12.2804 15.9545 12.2804 15.5702 12.2804C15.1859 12.2804 14.5627 12.4241 14.033 12.9888C13.5033 13.5638 12.018 14.9397 12.018 17.7429C12.018 20.546 14.0849 23.2567 14.3654 23.6366C14.6562 24.0165 18.4264 29.7665 24.2116 32.2411C27.8675 33.8018 29.3008 33.9353 31.1288 33.6683C32.2402 33.504 34.5355 32.2924 35.0133 30.9576C35.4911 29.6228 35.4911 28.483 35.3457 28.2469C35.2107 27.9902 34.8264 27.8464 34.2551 27.5692Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__contact__middle__socialMedia__element">
+                        <a href="">
+                            <svg width="47" height="38" viewBox="0 0 47 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M41.7478 9.911C41.7773 10.3196 41.7773 10.7283 41.7773 11.1369C41.7773 23.6001 32.1819 37.9606 14.6442 37.9606C9.24118 37.9606 4.22203 36.4136 0 33.7284C0.767667 33.8159 1.50571 33.8451 2.30291 33.8451C6.76105 33.8451 10.865 32.3566 14.1423 29.8172C9.94977 29.7296 6.43634 27.0152 5.22581 23.2791C5.81635 23.3666 6.4068 23.425 7.02688 23.425C7.88306 23.425 8.73934 23.3082 9.53645 23.104C5.16683 22.2283 1.8895 18.4339 1.8895 13.8514V13.7347C3.159 14.4352 4.63536 14.873 6.20005 14.9313C3.6314 13.2384 1.94857 10.3488 1.94857 7.07974C1.94857 5.3285 2.42087 3.72317 3.24761 2.32214C7.94204 8.04296 14.9985 11.779 22.911 12.1877C22.7634 11.4871 22.6748 10.7575 22.6748 10.0278C22.6748 4.83229 26.9263 0.600098 32.2112 0.600098C34.957 0.600098 37.437 1.73842 39.179 3.57726C41.3343 3.16865 43.401 2.38054 45.2316 1.30061C44.5229 3.48975 43.0172 5.32859 41.0391 6.49603C42.9582 6.29181 44.8182 5.76631 46.5306 5.03669C45.2318 6.90464 43.6078 8.56828 41.7478 9.911Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__contact__middle__socialMedia__element">
+                        <a href="">
+                            <svg width="48" height="46" viewBox="0 0 48 46" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M47.5101 23C47.5101 10.2944 37.097 0 24.2448 0C11.3926 0 0.979492 10.2944 0.979492 23C0.979492 34.4796 9.48728 43.9949 20.6096 45.7218V29.6487H14.6995V23H20.6096V17.9326C20.6096 12.1687 24.0806 8.98484 29.3969 8.98484C31.943 8.98484 34.6054 9.43371 34.6054 9.43371V15.091H31.6709C28.7815 15.091 27.88 16.8642 27.88 18.6829V23H34.3324L33.3004 29.6487H27.88V45.7218C39.0023 43.9949 47.5101 34.4796 47.5101 23Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__contact__middle__socialMedia__element">
+                        <a href="">
+                            <svg width="47" height="46" viewBox="0 0 47 46" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.7402 11.2037C17.1382 11.2037 11.813 16.4682 11.813 22.9949C11.813 29.5216 17.1382 34.7861 23.7402 34.7861C30.3422 34.7861 35.6674 29.5216 35.6674 22.9949C35.6674 16.4682 30.3422 11.2037 23.7402 11.2037ZM23.7402 30.6607C19.4738 30.6607 15.986 27.2229 15.986 22.9949C15.986 18.7669 19.4635 15.3291 23.7402 15.3291C28.017 15.3291 31.4945 18.7669 31.4945 22.9949C31.4945 27.2229 28.0066 30.6607 23.7402 30.6607ZM38.9373 10.7214C38.9373 12.2504 37.6916 13.4716 36.1553 13.4716C34.6086 13.4716 33.3733 12.2402 33.3733 10.7214C33.3733 9.20257 34.619 7.97111 36.1553 7.97111C37.6916 7.97111 38.9373 9.20257 38.9373 10.7214ZM46.8368 13.5127C46.6604 9.82856 45.8092 6.5652 43.0791 3.87652C40.3594 1.18784 37.0584 0.346347 33.3318 0.161629C29.491 -0.0538762 17.979 -0.0538762 14.1383 0.161629C10.422 0.336085 7.12104 1.17758 4.39096 3.86626C1.66089 6.55494 0.820069 9.81829 0.63322 13.5024C0.415229 17.2994 0.415229 28.6801 0.63322 32.4771C0.809688 36.1612 1.66089 39.4245 4.39096 42.1132C7.12104 44.8019 10.4117 45.6434 14.1383 45.8281C17.979 46.0436 29.491 46.0436 33.3318 45.8281C37.0584 45.6537 40.3594 44.8122 43.0791 42.1132C45.7988 39.4245 46.65 36.1612 46.8368 32.4771C47.0548 28.6801 47.0548 17.3097 46.8368 13.5127ZM41.875 36.5511C41.0653 38.5625 39.4978 40.1121 37.4529 40.9228C34.3906 42.1235 27.1243 41.8464 23.7402 41.8464C20.3562 41.8464 13.0794 42.1132 10.0276 40.9228C7.993 40.1224 6.42554 38.5728 5.60548 36.5511C4.39096 33.5238 4.67124 26.3403 4.67124 22.9949C4.67124 19.6494 4.40134 12.4557 5.60548 9.4386C6.41516 7.42722 7.98262 5.87764 10.0276 5.06693C13.0898 3.86626 20.3562 4.14334 23.7402 4.14334C27.1243 4.14334 34.401 3.87652 37.4529 5.06693C39.4875 5.86737 41.0549 7.41696 41.875 9.4386C43.0895 12.4659 42.8092 19.6494 42.8092 22.9949C42.8092 26.3403 43.0895 33.5341 41.875 36.5511Z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="footer__content__links footer__content__links-2">
+                <li class="footer__content__link"><a href="">Archivos</a></li>
+                <li class="footer__content__link"><a href="">Últimas noticias</a></li>
+                <li class="footer__content__link"><a href="">Contáctanos</a></li>
+                <li class="footer__content__link"><a href="">Galería</a></li>
+                <li class="footer__content__link"><a href="">Carnet del deportista</a></li>
+            </ul>
+        </section>
+        <hr class="footer__hr">
+        <section class="footer__copyright__container">
+            <p class="footer__copyright__text">&copy; COPYRIGHT 2022 - CUK.ORG.UY</p>
+            <hr class="footer__copyright__hr">
+            <a href="" class="footer__codexpert__link">Desarrollado por Codexpert</a>
+        </section>
     </footer>
     <script src="../../js/header.js"></script>
 </body>
