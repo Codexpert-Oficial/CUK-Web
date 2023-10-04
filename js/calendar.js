@@ -160,11 +160,12 @@ const writeMonthDays = (month, eventsInMonth) => {
         if (i == currentDay && month == actualDate.getMonth()) {
             calendarDaysContainer.innerHTML += `<div class="calendar__day"><div class="calendar__day__today">${i}</div></div>`;
         } else if (eventsWrited < eventsInMonth.length && i == eventsInMonth[eventsWrited].day) {
-            calendarDaysContainer.innerHTML += `<div class="calendar__day">
-                                                    <div class="event__day" data-description="${eventsInMonth[eventsWrited].name}">
-                                                        ${i}
-                                                    </div>
-                                                </div>`;
+            calendarDaysContainer.innerHTML += `
+            <div class="calendar__day">
+                <div class="event__day" data-description="${eventsInMonth[eventsWrited].name}">
+                    ${i}
+                </div>
+            </div>`;
             eventsWrited++;
         } else {
             calendarDaysContainer.innerHTML += `<div class="calendar__day">${i}</div>`;

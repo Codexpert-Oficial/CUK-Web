@@ -19,10 +19,11 @@
   width: calc(100%);
   height: 100vh;
   max-height: 1000px;
-  background-image: url(../../imgs/background/start-background.png);
+  background-image: url(../../imgs/background/start-background0.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: 1s background-image ease;
 }
 
 .start__content__container {
@@ -50,12 +51,21 @@
   color: var(--primary-text-color);
 }
 
+.start__data__title-animation {
+  animation: moveContentLeft 2s ease;
+}
+
 .start__data__description {
   color: var(--secondary-text-color);
   width: 720px;
   margin: 0;
   font-family: Inter-regular;
   font-size: 25px;
+}
+
+.start__data__description-animation {
+  animation: moveContentLeft 2s ease;
+  animation-delay: 0.2s;
 }
 
 .start__data__link {
@@ -70,6 +80,11 @@
   width: 150px;
   font-family: Inter-medium;
   font-size: 25px;
+}
+
+.start__data__link-animation {
+  animation: moveContentLeft 2s ease;
+  animation-delay: 0.4s;
 }
 
 .start__data__link:hover {
@@ -130,6 +145,54 @@
   filter: brightness(1);
 }
 
+.start__progressBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: aliceblue;
+}
+
+.start__progressBar-animation {
+  animation: progressBar 12s linear infinite;
+}
+
+@keyframes progressBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes moveContentLeft {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX((0));
+    opacity: 1;
+  }
+}
+
+@keyframes changeStartBackground {
+  0% {
+    background-image: url(../../imgs/background/start-background.png);
+    filter: brightness(1);
+  }
+  50% {
+  }
+  100% {
+    background-image: url(../../imgs/background/start-background4.png);
+    filter: brightness(1);
+  }
+}
 
 /*
 
