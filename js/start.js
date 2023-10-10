@@ -1,4 +1,23 @@
 
+// dark mode button
+let swtichButton = document.querySelector(".start__switch");
+let switchBackground = document.querySelector(".start__switch__background");
+
+swtichButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    switchCircle.classList.toggle("start__switch__circle-active");
+    document.body.classList.toggle("light")
+
+    if (document.body.classList.contains("light")) {
+        localStorage.setItem("dark-mode", "false")
+    } else {
+        localStorage.setItem("dark-mode", "true")
+    }
+    init()
+})
+
+
+
 // let startTitle = document.querySelector(".start__title-CUK");
 
 // const changeTitle = () => {

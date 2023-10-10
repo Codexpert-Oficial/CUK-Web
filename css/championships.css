@@ -72,6 +72,7 @@ main {
 .goPDF__img {
   border-radius: 20px;
   transition: 0.2s box-shadow ease;
+  filter: var(--img-saturation);
 }
 
 .ranking__category__img:hover,
@@ -143,6 +144,7 @@ main {
 .referees__img {
   border-radius: 10px;
   border: 4px solid var(--primary-bg-color);
+  filter: var(--img-saturation);
 }
 
 .referees__name {

@@ -77,7 +77,7 @@ main {
     background-color: var(--primary-mode-color);
     border-radius: 50%;
     width: 100%;
-    filter: brightness(0.5);
+    filter: var(--img-saturation);
 }
 
 
@@ -140,15 +140,14 @@ main {
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.459);
     border-radius: 20px;
     overflow: hidden;
-    background-color: rgb(10, 49, 84);
     width: 300px;
 }
 
 .files__element:hover::after {
     content: attr(data-description);
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
     bottom: 0;
+    background-color: var(--primary-bg-color);
     color: var(--secondary-text-color);
     padding: 5px 10px;
     border-radius: 5px;
@@ -206,7 +205,7 @@ main {
 .file__img {
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.5);
+    filter: var(--img-saturation);
     background: rgba(0, 0, 0, 0.908);
 }
 

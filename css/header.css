@@ -56,7 +56,7 @@
   width: 100%;
   position: absolute;
   height: 30px;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.192), transparent);
+  background: linear-gradient(to top, var(--fourth-text-color), transparent);
   transform: translateY(-50px);
   border-bottom: 3px solid var(--primary-mode-color-contrast);
   opacity: 0;

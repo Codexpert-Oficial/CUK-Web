@@ -191,6 +191,7 @@
             <a href="" class="footer__codexpert__link">Desarrollado por Codexpert</a>
         </section>
     </footer>
+    <script src="../js/lightMode.js"></script>
     <script src="../js/header.js"></script>
     <script src="../js/gallery.js"></script>
 </body>

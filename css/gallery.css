@@ -25,7 +25,7 @@ main {
   position: absolute;
   right: 40px;
   top: 30px;
-  fill: aliceblue;
+  fill: var(--primary-text-color);
   transition: transform 0.2s ease-in-out;
 }
 
@@ -37,7 +37,7 @@ main {
 
 .modal__arrow__icon {
   margin: 20px;
-  fill: rgba(240, 248, 255, 0.64);
+  fill: var(--primary-text-color);
   transition: transform 0.2s ease-in-out;
   height: 100px;
 }
@@ -142,7 +142,6 @@ main {
     position: absolute;
     right: 20px;
     top: 10px;
-    fill: aliceblue;
     transition: transform 0.2s ease-in-out;
   }
 

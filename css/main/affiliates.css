@@ -4,7 +4,7 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  background: rgb(20, 20, 20);
+  background: var(--nineth-mode-color);
   padding: 100px 0 200px 0;
 }
 
@@ -21,7 +21,7 @@
 
 .affilites__slider::before,
 .affilites__slider::after {
-  background: linear-gradient(to right, rgb(20, 20, 20) 0%, transparent 100%);
+  background: linear-gradient(to right, var(--nineth-mode-color) 0%, transparent 100%);
   content: "";
   height: 255px;
   position: absolute;
@@ -51,6 +51,7 @@
 
 .affiliates__slider__track:hover {
   animation-play-state: paused;
+  background: var(--fifth-mode-color);
 }
 
 
@@ -66,16 +67,17 @@
 }
 
 .affiliates__slider__element__img {
-  filter: opacity(0.5);
+  filter: var(--img-saturation);
   height: 240px;
   width: 240px;
   object-fit: contain;
   box-sizing: border-box;
   border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .affiliates__slider__element__img:hover {
-  filter: opacity(0.8);
+  filter: var(--img-saturation-hover);
   cursor: pointer;
 }
 

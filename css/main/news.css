@@ -54,7 +54,7 @@
   width: 275px;
   height: 235px;
   object-fit: cover;
-  filter: brightness(0.5);
+  filter: var(--img-saturation);
   border-radius: 10px;
 }
 
@@ -132,7 +132,7 @@
   width: 270px;
   height: 270px;
   border-radius: 10px;
-  filter: brightness(0.5);
+  filter: var(--img-saturation);
   border: 1px solid #ffffff;
 }
 

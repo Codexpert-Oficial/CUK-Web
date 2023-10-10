@@ -12,6 +12,8 @@
   --secondary-bg-color: rgba(15, 145, 210, 0.5);
   --third-bg-color: rgba(15, 145, 210, 0.3);
   --fourth-bg-color: rgb(45, 102, 142);
+  
+  --details-bg-color: rgb(180, 164, 39);
 
   --primary-mode-color: rgb(33, 33, 33); /* dark mode */
   --secondary-mode-color: rgb(40, 40, 40); /* dark mode */
@@ -19,11 +21,43 @@
   --fourth-mode-color: rgb(20, 20, 20); /* dark mode */
   --fifth-mode-color: rgba(0, 0, 0, 0.3); /* dark mode */
   --sixth-mode-color: rgba(0, 0, 0, 0.7); /* dark mode */
+  --eighth-mode-color: rgba(0, 0, 0, 1); /* dark mode */
+  --nineth-mode-color: rgb(28,28,28);
 
   --primary-mode-color-contrast: rgb(230, 230, 230); /* dark mode */
 
+  --img-saturation: brightness(0.5);
+  --img-saturation-hover: brightness(0.8);
+
 }
 
+body.light {
+  --primary-text-color: rgb(49, 49, 49);
+  --secondary-text-color: rgb(10, 10, 10);
+  --third-text-color: rgba(0, 0, 0, 0.596);
+  --fourth-text-color: rgba(0, 0, 0, 0.4);
+
+  --primary-bg-color: rgb(71, 178, 255);
+  --secondary-bg-color: rgb(35, 152, 236);
+  --third-bg-color: rgba(15, 145, 210, 0.3);
+  --fourth-bg-color: rgb(45, 102, 142);
+  
+  --details-bg-color: rgb(255, 236, 94);
+
+  --primary-mode-color: rgb(250, 250, 250); /* light mode */
+  --secondary-mode-color: rgb(238, 238, 238); /* light mode */
+  --third-mode-color: rgb(214, 211, 211); /* light mode */
+  --fourth-mode-color: rgb(192, 192, 192); /* light mode */
+  --fifth-mode-color: rgba(255, 255, 255, 0.3); /* light mode */
+  --sixth-mode-color: rgba(255, 255, 255, 0.7); /* light mode */
+  --eighth-mode-color: rgb(204, 204, 204); /* light mode */
+  --nineth-mode-color: rgb(236, 236, 236); /* dark mode */
+
+  --primary-mode-color-contrast: rgb(32, 32, 32); /* light mode */
+
+  --img-saturation: brightness(0.9);
+  --img-saturation-hover: brightness(0.8);
+}
 
 
 
@@ -32,40 +66,57 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-
+/* Estilos generales del scrollbar */
 body::-webkit-scrollbar {
   -webkit-appearance: none;
-  background: rgb(58, 58, 58);
+  background: rgb(40, 40, 40);
 }
 
 body::-webkit-scrollbar:vertical {
-  width:12px;
+  width: 12px;
 }
 
-body::-webkit-scrollbar-button:increment,body::-webkit-scrollbar-button {
+body::-webkit-scrollbar-button:increment,
+body::-webkit-scrollbar-button {
   display: none;
-} 
+}
 
 body::-webkit-scrollbar:horizontal {
   height: 12px;
 }
 
+/* Estilos del scrollbar para el modo oscuro */
 body::-webkit-scrollbar-thumb {
-  background-color: #155b7c;
+  background-color: rgb(17, 73, 114);
   border-radius: 20px;
-  border: 2px solid rgb(58, 58, 58);
+  border: 2px solid rgb(40, 40, 40);
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(31, 107, 143);
+  background-color: rgba(15, 145, 210, 0.5);
 }
 
 body::-webkit-scrollbar-thumb:active {
-  background-color: #0f7bad;
+  background-color: rgba(15, 145, 210, 0.3);
 }
 
-body::-webkit-scrollbar-track {
-  border-radius: 10px;  
+body.light::-webkit-scrollbar {
+  -webkit-appearance: none;
+  background: rgb(238, 238, 238);
+}
+
+body.light::-webkit-scrollbar-thumb {
+  background-color: rgb(71, 178, 255); /* Cambia al color de fondo principal */
+  border-radius: 20px;
+  border: 2px solid rgb(238, 238, 238);
+}
+
+body.light::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(35, 152, 236); /* Cambia al color de fondo secundario al pasar el mouse */
+}
+
+body.light::-webkit-scrollbar-thumb:active {
+  background-color: rgba(15, 145, 210, 0.3); /* Cambia al tercer color de fondo al hacer clic */
 }
 
 
@@ -74,7 +125,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  background: #2E2E2E;
+  background: var(--secondary-mode-color);
 }
 
 article {

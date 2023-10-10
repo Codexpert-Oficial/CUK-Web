@@ -42,7 +42,7 @@
 .gancho {
   width: 30px;
   height: 60px;
-  background-color: rgb(180, 164, 39);
+  background-color: var(--details-bg-color);
   border-radius: 30px;
 }
 
@@ -159,7 +159,7 @@
 .event__day:hover::after {
   content: attr(data-description);
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--third-mode-color);
   transform: translateY(50px);
   min-width: 120px;
   color: var(--secondary-text-color);
