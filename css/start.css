@@ -43,6 +43,11 @@
     background-image: url(../imgs/background/news-background.png);
 }
 
+.start-affiliates {
+    background-image: url(../imgs/background/affiliates-background.png);
+}
+
+
 .start__content {
     position: relative;
     display: flex;

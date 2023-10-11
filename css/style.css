@@ -150,6 +150,7 @@ article {
   display: flex;
   align-items: center;
   gap: 15px;
+  max-width: 1200px;
 }
 
 .content__title::before, .content__title::after {
