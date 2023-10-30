@@ -4,10 +4,12 @@
     display: none;
     width: 100%;
     height: 100%;
+    padding: 15px;
     justify-content: center;
     align-items: center;
     background: var(--sixth-mode-color);
-    z-index: 100;
+    box-sizing: border-box;
+    z-index: 150;
 }
 .modal__container-active {
     display: flex;
@@ -16,11 +18,12 @@
 .modal {
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     max-width: 1000px;
     max-height: 500px;
-    align-items: center;
     border: 3px solid var(--primary-bg-color);
     background: var(--primary-mode-color);
     padding: 40px;
@@ -46,7 +49,61 @@
     box-sizing: border-box;
     hyphens: auto;
     max-width: 500px;
-    padding-right: 20px;
+}
+.modal__description {
+  color: var(--primary-text-color);
+  font-family: Inter-medium;
+  font-size: 20px;
+  box-sizing: border-box;
+  hyphens: auto;
+  max-width: 500px;
+  overflow-y: auto;
+}
+
+.modal__description::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal__description::-webkit-scrollbar-button:increment,
+.modal__description::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Estilos del scrollbar para el modo oscuro */
+.modal__description::-webkit-scrollbar-thumb {
+  background-color: rgb(17, 73, 114);
+  border-radius: 20px;
+  border: 2px solid rgb(40, 40, 40);
+}
+
+.modal__description::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(15, 145, 210, 0.5);
+}
+
+.modal__description::-webkit-scrollbar-thumb:active {
+  background-color: rgba(15, 145, 210, 0.3);
+}
+
+.modal__description.light::-webkit-scrollbar {
+  -webkit-appearance: none;
+  background: rgb(238, 238, 238);
+}
+
+.modal__description.light::-webkit-scrollbar-thumb {
+  background-color: rgb(71, 178, 255);
+  /* Cambia al color de fondo principal */
+  border-radius: 20px;
+  border: 2px solid rgb(238, 238, 238);
+}
+
+.modal__description.light::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(35, 152, 236);
+  /* Cambia al color de fondo secundario al pasar el mouse */
+}
+
+.modal__description.light::-webkit-scrollbar-thumb:active {
+  background-color: rgba(15, 145, 210, 0.3);
+  /* Cambia al tercer color de fondo al hacer clic */
 }
 
 .modal__close__icon__container {
@@ -81,6 +138,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    padding: 15px;
     max-width: 1000px;
   }
   
@@ -100,9 +158,10 @@
   .affiliates__element__img__container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 260px;
-    height: 260px;
+    align-items: center;    
+    max-width: 260px;
+    max-height: 260px;
+    width: 100%;
     border-radius: 50%;
     box-sizing: border-box;
   }
@@ -126,3 +185,41 @@
     text-transform: uppercase;
     text-align: center;
   }
+
+
+@media (max-width: 850px) {
+  
+  .modal {
+    flex-direction: column;
+    max-height: 80vh;
+    gap: 10px;
+  }
+
+  .modal__img__container {
+    max-height: 50vw;
+  }
+
+  .modal__img {
+    max-height: 100%;
+  }
+
+  .modal__description {
+    max-width: 70vw;
+    text-align: center;
+    hyphens: auto;  
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+  
+}
+
+@media (max-width: 420px) {
+  
+  .modal__img__container {
+    max-height: 70vw;
+  }
+
+}
+

@@ -6,10 +6,8 @@ let modal__img = document.querySelector(".modal__img");
 
 imgs.forEach((img) => {
   img.addEventListener("click", () => {
-    let getBackgroundImg = window.getComputedStyle(img).backgroundImage;
-    let backgroundImage = getBackgroundImg.substring(5);
-    backgroundImage = backgroundImage.slice(0, -2);
-    modal__img.setAttribute("src", backgroundImage);
+    let getBackgroundImg = img.src;
+    modal__img.setAttribute("src", getBackgroundImg);
     modal__container.style.display = "flex";
   });
 });

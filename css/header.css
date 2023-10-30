@@ -12,7 +12,7 @@
   width: 100%;
   z-index: 100;
   background: transparent;
-  transition: 0.2s background ease;
+  transition: 0.2s background ease, 0.2s height ease;
 }
 
 .header-active {
@@ -24,7 +24,7 @@
   justify-content: space-between;
   width: 100%;
   max-width: 1400px;
-  height: 60px;
+  height: 100%;
   padding: 0 30px;
   box-sizing: border-box;
 }
@@ -101,88 +101,60 @@
 .nav__logo:hover {
   filter: brightness(0.9);
 }
-/*
 
-
-
-@media (max-width: 1200px) {
-  
-
-  .header__links__container {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    bottom: 0;
-    left: 1800px;
-    background: linear-gradient(to right, #3396FF, #1864FC);
-    transition: left 1s ease;
-    gap: 20px;
-  }
-
-  .header__links__container li a {
-    font-size: 30px;
-  }  
-
-  .header__nav__bars__container {
-    display: flex;
-  }
-  
+.nav__barsIcon__container {
+  display: flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width: 900px) {
+.nav__barsIcon {
+  display: none;
+  height: 45px;
+  fill: var(--secondary-text-color);
+}
 
-  .header__container { 
-    background: linear-gradient(to right, #3396FF, #1864FC)
+.nav__barsIcon-close {
+  height: 55px;
+}
+
+.nav__barsIcon-active {
+  display: flex;
+  z-index: 1000;
+}
+
+@media (max-width: 950px) {
+
+  .header {
+    height: 100px;
   }
 
-  .header__logo__img {
-    width: 70px;
+  .header-active {
     height: 70px;
   }
   
-  .header__background {
-    display: none;
+  .nav__elements__container {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary-mode-color);
+    transition: transform 0.5s ease;
+    transform: translateX(1200px) translateY(-15px);
   }
-  
+
+  .nav__elements__container-active {
+    transform: translateX(-30px) translateY(-15px);
+  }
+
+  .nav__logo-active {
+    margin: 10px 0;
+  }
+
+  .nav__barsIcon__container {
+    display: flex;
+  }
+
 }
-
-@media (max-width: 600px) {
-
-  header {
-    height: 60px;
-  }
-  
-  .header__container { 
-    padding: 0;
-  }
-
-  .header__nav {
-    height: 60px;
-  }
-
-  .header__logo {
-    left: 10px;
-    top: 10px;
-  }
-
-  .header__logo__img {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .header__nav__open__icon, .header__nav__close__icon {
-    height: 34px;
-  }
-  
-  .header__nav__close__icon {
-    height: 50px;
-  } 
-  
-  
-}
-
-
-*/

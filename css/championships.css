@@ -73,6 +73,8 @@ main {
   border-radius: 20px;
   transition: 0.2s box-shadow ease;
   filter: var(--img-saturation);
+  max-width: 1015px;
+  width: 100%;
 }
 
 .ranking__category__img:hover,
@@ -119,7 +121,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  padding: 20px;
 }
 
 .referees {
@@ -131,8 +133,10 @@ main {
 
 .referees__container {
   display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
   gap: 40px;
-  align-items: center;
+  justify-content: center;
 }
 
 .referees__element {
@@ -143,6 +147,8 @@ main {
 
 .referees__img {
   border-radius: 10px;
+  max-width: 300px;
+  width: 100%;
   border: 4px solid var(--primary-bg-color);
   filter: var(--img-saturation);
 }
@@ -163,248 +169,26 @@ main {
 }
 
 
+@media (max-width: 1050px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-.modal__container {
-  position: fixed;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.753);
-  padding: 30px;
-  box-sizing: border-box;
-  z-index: 1000;
-}
-
-.modal__container-active {
-  display: flex;
-}
-
-.modal__content {
-  position: relative;
-  width: 100%;
-  max-width: 1000px;
-  max-height: 800px;
-  height: 100%;
-  border-radius: 30px;
-  display: flex;
-  box-sizing: border-box;
-  overflow: scroll;
-}
-
-.modal__content::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-  background: transparent; 
-}
-
-.modal__icon__container {
-  position: fixed;
-  top: 35px;
-  right: 35px;
-  background: #ff4848;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border: 4px solid white;
-}
-
-.modal__icon {
-  height: 50px;
-  fill: aliceblue;
-}
-
-.modal__content__img {
-  height: 200%;
-}
-
-.coaching,
-.referees,
-.referees__judges {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-}
-
-.national__champions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.national__champions__tables {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 90vw;
-  gap: 100px;
-}
-
-.national__champions__tables__content {
-  width: 100%;
-  overflow-x: auto;
-}
-
-.national__champions__tables__content::-webkit-scrollbar {
-  height: 8px;
-}
-
-.national__champions__tables__content::-webkit-scrollbar-thumb {
-  background: rgba(70, 148, 242, 0.703);
-  border-radius: 10px;
-}
-
-.national__champions__tables__content::-webkit-scrollbar-thumb:hover {
-  background: rgba(70, 147, 242, 0.856);
-}
-
-.national__champions__tables__content::-webkit-scrollbar-thumb:active {
-  background: rgb(70, 147, 242);
-}
-
-.national__champions__tables__content::-webkit-scrollbar-track {
-  background: #1864FC;
-}
-
-.national__ranking {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 50px 200px 50px;
-}
-
-.ranking__container,
-.ranking__content,
-.ranking__element {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.ranking__container {
-  gap: 50px;
-}
-
-.ranking__tables {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  gap: 30px;
-}
-
-.table__img {
-  max-width: 100%;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.308);
-}
-
-.ranking__title {
-  font-size: 30px;
-  color: aliceblue;
-  text-align: center;
-  font-family: system-ui;
-}
-
-.ranking__element__openImg {
-  text-align: center;
-  font-family: system-ui;
-  color: aliceblue;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
-  display: none;
-  justify-content: center;
-}
-
-.ranking__element__openImg:hover {
-  text-decoration: underline;
-}
-
-.category__title {
-  font-size: 25px;
-  color: aliceblue;
-  text-align: center;
-  font-family: system-ui;
-}
-
-
-@media (max-width: 1200px) {
-
-  .ranking__element__openImg {
-    display: flex;
+  .ranking__content {
+    flex-direction: column;
+    gap: 30px;
   }
 
-}
-
-@media (max-width: 900px) {
-
-  .ranking__element__openImg {
-    font-size: 25px;
+  .ranking__category__img {
+    max-width: 450px;
+    max-height: 450px;
+    width: 100%;
   }
   
 }
 
-@media (max-width: 600px) {
+@media (max-width: 950px) {
 
-  .national__champions__tables {
-    gap: 50px;
-  }
-
-  .ranking__tables {
-    flex-wrap: wrap;
-  }
-
-  .ranking__element__openImg {
-    font-size: 20px;
-    margin: 10px 0;
+  .goPDF__container {
+    gap: 5px;
   }
   
 }
 
-
-
-
-*/

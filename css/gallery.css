@@ -69,8 +69,7 @@ main {
 .gallery__img {
   width: 400px;
   height: 400px;
-  background-size: cover;
-  background-position: center center;
+  object-fit: cover;
   border-radius: 20px;
   filter: brightness(0.6);
   box-shadow: 0 0 20px 0px var(--fifth-mode-color);
@@ -165,7 +164,6 @@ main {
 
   .imgs__container {
     gap: 20px;
-    padding: 0 0 200px 0;
   }
 
   .gallery__img {

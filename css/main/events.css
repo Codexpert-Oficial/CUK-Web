@@ -170,31 +170,36 @@
 }
 
 .calendar__events__container {
-  max-width: 250px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  height: 710px;
+  background: var(--primary-bg-color);
+  border-radius: 20px;
+  padding: 10px;  
+  box-sizing: border-box;
 }
 
 .no__events {
-  width: 250px;
+  width: 260px;
   padding: 20px;
   font-family: Inter-bold;
   font-size: 20px;
   text-align: center;
   color: var(--secondary-text-color);
-  background: var(--primary-bg-color);
+  background: var(--secondary-bg-color);
   border-radius: 10px;
   box-sizing: border-box;
 }
 
 .calendar__event {
   width: 250px;
-  background-color: var(--primary-bg-color);
+  background-color: var(--secondary-bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   padding: 5px;
 }
@@ -227,8 +232,6 @@
   font-size: 18px;
 }
 
-/*
-
 
 @media (max-width: 1200px) {
 
@@ -251,7 +254,6 @@
 
   .calendar__events__container {
     grid-column: 3;
-    max-width: 250px;
     gap: 30px;
   }
 
@@ -267,10 +269,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 90vw;
   }
 
   .calendar__events__container { 
     max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 
   .calendar__event { 
@@ -281,12 +286,8 @@
     margin: 15px;
   }
 
-}
-
-@media (max-width: 600px) {
-
-  .next__events__title {
-    font-size: 35px;
+  .no__events {
+    width: 100%;
   }
 
 }
@@ -333,7 +334,11 @@
     font-size: 17px;
   }
 
-  .event__day {
+  .calendar__events__container {
+    max-width: 378px;
+  }
+
+  .event__day, .calendar__day__today {
     width: 40px;
     height: 40px;
     font-size: 17px;
@@ -341,6 +346,14 @@
 
   .event__day:hover:after {
     font-size: 13px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .next__events__title {
+    font-size: 35px;
   }
 
 }
@@ -370,15 +383,20 @@
   }
 
   .calendar__top {
-    padding: 15px;
+    padding: 10px 15px;
   }
 
   .calendar__content {
     border-radius: 10px;
   }
 
+  .calendar__year {
+    font-size: 15px;
+  }
+
   .calendar__month__name {
     font-size: 25px;
+    line-height: 25px;
   }
 
   .calendar__arrow {
@@ -402,10 +420,15 @@
     font-size: 15px;
   }
 
-  .event__day {
+  .calendar__events__container {
+    max-width: 273px;
+  }
+
+  .event__day, .calendar__day__today {
     width: 25px;
     height: 25px;
     font-size: 15px;
+    border: 2px solid var(--primary-bg-color);
   }
 
   .event__day:hover:after {
@@ -422,5 +445,3 @@
   }
 
 }
-
-*/
