@@ -81,8 +81,6 @@ main {
     filter: var(--img-saturation);
 }
 
-
-
 .files {
     font-family: system-ui;
     display: flex;
@@ -242,7 +240,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding: 75px 0 0 0;
 }
 
 .deportistCard__title {

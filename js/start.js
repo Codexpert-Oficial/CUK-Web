@@ -60,18 +60,21 @@ const changeStartContent = (position) => {
                 startTitle.innerHTML = "Confederación Uruguaya de Karate";
                 startDescription.innerHTML = "Promovemos la difusión, reglamentación, desarrollo, organización y práctica del Karate en todo el territorio de la República Oriental del Uruguay.";
                 startLink.innerHTML = "Ver noticias";
+                startLink.href = "#news";
                 break;
 
             case 1: 
                 startTitle.innerHTML = "Inscripciones siempre abiertas";
                 startDescription.innerHTML = "La CUK tiene las inscripciones abiertas todo el año, para que seas bienvenido en todo momento. <br>¡Inscríbete ahora!";
                 startLink.innerHTML = "Saber más";
+                startLink.href = "institutional.html#joinCUK";
                 break;
 
             case 2: 
                 startTitle.innerHTML = "El poder del entrenamiento";
                 startDescription.innerHTML = "El entrenamiento en la CUK puede transformar tu vida, desarrollar tus habilidades físicas y mentales, y llevarte al siguiente nivel en el mundo del Karate.";
                 startLink.innerHTML = "Saber más";
+                startLink.href = "https://www.youtube.com/watch?v=uARqNbGDX0Ys";
                 break;
         }
 

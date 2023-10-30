@@ -75,11 +75,11 @@
                     <h1 class="start__data__title">Confederación Uruguaya de Karate</h1>
                     <p class="start__data__description">Promovemos la difusión, reglamentación, desarrollo, organización
                         y práctica del Karate en todo el territorio de la República Oriental del Uruguay.</p>
-                    <a href="index.html" class="start__data__link">Ver noticias</a>
+                    <a href="index.html#news" class="start__data__link">Ver noticias</a>
                 </section>
                 <section class="start__switch__container">
                     <a href="" class="start__switch__language">EN</a>
-                    <a class="start__switch" href="">
+                    <a class="start__switch" href="#">
                         <div class="start__switch__background">
                             <div class="start__switch__circle"></div>
                         </div>
@@ -93,34 +93,42 @@
             </div>
             <div class="start__progressBar start__progressBar-animation"></div>
         </article>
-        <article class="news news-start">
+        <article class="news news-start" id="news">
             <h2 class="news__title content__title">Noticias</h2>
             <div class="news__container">
                 <section class="new__main">
                     <div class="new__container">
-                        <div class="new__img__container">
-                            <img class="new__img" src="../imgs/news/new11-img2.jpeg" alt="noticia 1">
-                        </div>
+                        <a href="news.html#news">
+                            <div class="new__img__container">
+                                <img class="new__img" src="../imgs/news/new11-img2.jpeg" alt="noticia 1">
+                            </div>
+                        </a>
                         <div class="new__description__container">
                             <h3 class="new__description__title">PIN DE ORO - SERGIO BOTANA</h3>
                             <p class="new__description__text">El Comité Olímpico Uruguayo distinguió el día 26 de Abril
                                 al Senador de la República, EC. Sergio Botana con el otorgamiento del Pin de Oro</p>
-                            <a href="index.html" class="new__description__moreInfo">Saber más</a>
+                            <a href="news.html#news" class="new__description__moreInfo" target="_blank">Saber más</a>
                         </div>
                         <div class="new__date">24/04/2023</div>
                     </div>
                 </section>
                 <section class="news__subcontainer">
                     <div class="news__images__container">
-                        <div class="new__image__container">
-                            <img class="new__image" src="../imgs/news/new12.jpg" alt="noticia 12">
-                        </div>
-                        <div class="new__image__container">
-                            <img class="new__image" src="../imgs/news/new13.jpg" alt="noticia 13">
-                        </div>
-                        <div class="new__image__container">
-                            <img class="new__image" src="../imgs/news/new10-img2.jpeg" alt="noticia 10">
-                        </div>
+                        <a href="news.html#news">
+                            <div class="new__image__container">
+                                <img class="new__image" src="../imgs/news/new12.jpg" alt="noticia 12">
+                            </div>
+                        </a>
+                        <a href="news.html#news">
+                            <div class="new__image__container">
+                                <img class="new__image" src="../imgs/news/new13.jpg" alt="noticia 13">
+                            </div>
+                        </a>
+                        <a href="news.html#news">
+                            <div class="new__image__container">
+                                <img class="new__image" src="../imgs/news/new10-img2.jpeg" alt="noticia 10">
+                            </div>
+                        </a>
                     </div>
                 </section>
             </div>
@@ -181,7 +189,7 @@
                 </div>
             </section>
         </article>
-        <article class="contact">
+        <article class="contact" id="contact">
             <section class="contact__form__container">
                 <h3 class="contact__title content__title">Contacto</h3>
                 <form class="contact__form" action="https://formsubmit.co/oficial.codexpert@gmail.com" method="POST">
@@ -221,7 +229,7 @@
                 </div>
             </section>
         </article>
-        <article class="affiliates">
+        <article class="affiliates" id="affiliates">
             <h2 class="affiliates__title content__title">Afiliadas</h2>
             <section class="affilites__slider">
                 <div class="affiliates__slider__track">
@@ -434,17 +442,19 @@
     <footer class="footer">
         <section class="footer__content__container">
             <ul class="footer__content__links">
-                <li class="footer__content__link"><a href="">Afiliadas</a></li>
-                <li class="footer__content__link"><a href="">Jueces 2022-2024</a></li>
-                <li class="footer__content__link"><a href="">Cuerpo técnico</a></li>
-                <li class="footer__content__link"><a href="">Ranking 2022</a></li>
-                <li class="footer__content__link"><a href="">Campeones Nacionales 2022</a></li>
+                <li class="footer__content__link"><a href="index.html#affiliates">Afiliadas</a></li>
+                <li class="footer__content__link"><a href="championships.html#referees">Árbitros 2022-2024</a></li>
+                <li class="footer__content__link"><a href="championships.html#coaching">Cuerpo técnico</a></li>
+                <li class="footer__content__link"><a href="championships.html#ranking">Ranking 2022</a></li>
+                <li class="footer__content__link"><a href="championships.html#national__championships">Campeones Nacionales 2022</a></li>
             </ul>
             <div class="footer__content__middle">
-                <img class="footer__content__middle__logo" src="../imgs/logos/logo.png" alt="logo cuk">
+                <a href="index.html">
+                    <img class="footer__content__middle__logo" src="../imgs/logos/logo.png" alt="logo cuk">
+                </a>
                 <ul class="footer__content__middle__socialMedia__container">
                     <li class="footer__contact__middle__socialMedia__element">
-                        <a href="">
+                        <a href="https://wa.me/+59899999999">
                             <svg width="48" height="46" viewBox="0 0 48 46" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -453,7 +463,7 @@
                         </a>
                     </li>
                     <li class="footer__contact__middle__socialMedia__element">
-                        <a href="">
+                        <a href="https://twitter.com/cukkarate">
                             <svg width="47" height="38" viewBox="0 0 47 38" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -462,7 +472,7 @@
                         </a>
                     </li>
                     <li class="footer__contact__middle__socialMedia__element">
-                        <a href="">
+                        <a href="https://www.facebook.com/karatecuk">
                             <svg width="48" height="46" viewBox="0 0 48 46" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -471,7 +481,7 @@
                         </a>
                     </li>
                     <li class="footer__contact__middle__socialMedia__element">
-                        <a href="">
+                        <a href="https://www.instagram.com/cukkarate">
                             <svg width="47" height="46" viewBox="0 0 47 46" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -482,11 +492,11 @@
                 </ul>
             </div>
             <ul class="footer__content__links footer__content__links-2">
-                <li class="footer__content__link"><a href="">Archivos</a></li>
-                <li class="footer__content__link"><a href="">Últimas noticias</a></li>
-                <li class="footer__content__link"><a href="">Contáctanos</a></li>
-                <li class="footer__content__link"><a href="">Galería</a></li>
-                <li class="footer__content__link"><a href="">Carnet del deportista</a></li>
+                <li class="footer__content__link"><a href="institutional.html#files">Archivos</a></li>
+                <li class="footer__content__link"><a href="index.html#news">Últimas noticias</a></li>
+                <li class="footer__content__link"><a href="index.html#contact">Contáctanos</a></li>
+                <li class="footer__content__link"><a href="../php/gallery.php">Galería</a></li>
+                <li class="footer__content__link"><a href="institutional.html#deportistCard">Carnet del deportista</a></li>
             </ul>
         </section>
         <hr class="footer__hr">

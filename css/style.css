@@ -55,7 +55,9 @@ body.light {
   --img-saturation-hover: brightness(0.8);
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;

@@ -10,6 +10,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 75px;
   gap: 250px;
 }
 
@@ -102,6 +103,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 75px 0 0 0;
 }
 
 .goPDF__container {
@@ -129,6 +131,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  padding: 75px 0 0 0;
 }
 
 .referees__container {
@@ -166,6 +169,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin-bottom: 200px;
+  padding: 75px 0 0 0;
 }
 
 
