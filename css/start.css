@@ -17,7 +17,7 @@
     position: relative;
     width: calc(100%);
     height: 100svh;
-    max-height: 1000px;
+    max-height: 1080px;
     background-color: var(--eighth-mode-color);
     display: flex;
     align-items: center;

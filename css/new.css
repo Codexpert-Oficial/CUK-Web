@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: var(--primary-mode-color);
 }
 
 .new {
@@ -39,7 +40,7 @@ body {
 }
 
 .new-background {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),  url(../imgs/background/news-background.png) center/cover no-repeat;
+  background: url(../imgs/background/news-background.png) center/cover no-repeat;
 }
 
 .new__title {
@@ -96,7 +97,7 @@ body {
   justify-content: center;
 }
 
-.new__img, .new__img__big, .new__img__small {
+.new__img, .new__img, .new__img {
   width: 100%;
   max-width: 1000px;
   border-radius: 15px;

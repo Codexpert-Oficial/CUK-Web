@@ -3,7 +3,7 @@
   font-family: Chivo-bold;
   src: url(../../fonts/Chivo/Chivo-Bold.ttf);
 }
-
+ 
 @font-face {
   font-family: Inter-regular;
   src: url(../../fonts/Inter/Inter-Regular.ttf);
@@ -16,9 +16,9 @@
 
 .start {
   position: relative;
-  width: calc(100%);
+  width: 100%;
   height: 100svh;
-  max-height: 900px;
+  max-height: 1080px;
   background-color: var(--eighth-mode-color);
   background-image: url(../../imgs/background/start-background0.png);
   background-size: cover;
@@ -32,6 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-height: 1080px;
   padding: 0 30px;
   box-sizing: border-box;
 }
