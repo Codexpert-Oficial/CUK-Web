@@ -167,6 +167,10 @@
 
 @media (max-width: 950px) {
 
+  .new__main {
+    padding: 0;
+  }
+
   .new__container {
     margin-top: 100px;
     flex-direction: column;

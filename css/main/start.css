@@ -83,6 +83,7 @@
   width: 150px;
   font-family: Inter-medium;
   font-size: 25px;
+  transition: filter 0.1s ease;
 }
 
 .start__data__link-animation {
@@ -91,7 +92,7 @@
 }
 
 .start__data__link:hover {
-  filter: opacity(1.3);
+  filter: brightness(1.4);
 }
 
 .start__switch__container {

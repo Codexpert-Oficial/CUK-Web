@@ -42,13 +42,12 @@ td {
     .table__container {
         border-radius: 10px;
         box-sizing: border-box;
+        width: fit-content;
     }
 
     table {
         font-size: 18px;
         border-radius: 15px;
-        max-width: 600px;
-        overflow-x: auto;
         box-sizing: border-box;
     }
 
@@ -65,7 +64,6 @@ td {
     table {
         font-size: 16px;
         max-width: 400px;
-        width: 90%;
     }
 
     th,

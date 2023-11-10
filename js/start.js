@@ -53,7 +53,7 @@ const changeStartContent = (position) => {
 
     setTimeout(() => {
         
-        startBackground.style.backgroundImage = `url(../imgs/background/start-background${position}.png)`;
+        startBackground.style.backgroundImage = "url(../imgs/background/start-background" + position + ".png)";
 
         switch (position) {
             case 0: 

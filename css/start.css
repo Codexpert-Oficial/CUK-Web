@@ -1,16 +1,16 @@
 @font-face {
     font-family: Chivo-bold;
-    src: url(../fonts/Chivo/Chivo-Bold.ttf);
+    src: url(../fonts/Chivo/Chivo-Bold.ttf), system-ui;
 }
 
 @font-face {
     font-family: Inter-regular;
-    src: url(../fonts/Inter/Inter-Regular.ttf);
+    src: url(../fonts/Inter/Inter-Regular.ttf), system-ui;
 }
 
 @font-face {
     font-family: Inter-medium;
-    src: url(../fonts/Inter/Inter-Medium.ttf);
+    src: url(../fonts/Inter/Inter-Medium.ttf), system-ui;
 }
 
 .start {
@@ -140,6 +140,11 @@
     width: 30px;
     height: 30px;
     fill: var(--secondary-text-color);
+    transition: fill 0.2s ease;
+}
+
+.start__socialMedia__icon:hover {
+    fill: var(--secondary-bg-color);
 }
 
 

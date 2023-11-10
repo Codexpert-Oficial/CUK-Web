@@ -12,7 +12,7 @@
   width: 100%;
   padding: 0;
   align-items: center;
-  background-image: url(../../imgs/backgsround/calendar-background.png), linear-gradient(to bottom, transparent, var(--fifth-mode-color));
+  background-image: linear-gradient(to bottom, transparent, var(--fifth-mode-color));
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -191,7 +191,8 @@
   .contact__info {
     padding: 20px;
     border-radius: 30px;
-    max-width: 500px;
+    margin: 0 50px;
+    box-sizing: border-box;
   }
 
   .contact__text {
@@ -218,7 +219,7 @@
   .contact__info {
     padding: 20px;
     border-radius: 30px;
-    max-width: 370px;
+    margin: 0 15px;
   }
 
 }
