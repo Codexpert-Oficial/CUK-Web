@@ -36,7 +36,7 @@
         <nav class="nav">
             <ul class="nav__elements__container">
                 <li class="nav__element">
-                    <a href="../html/index.html" class="nav__element__link">Inicio</a>
+                    <a href="../index.html" class="nav__element__link">Inicio</a>
                 </li>
                 <li class="nav__element">
                     <a href="../html/institutional.html" class="nav__element__link">Institucional</a>
@@ -51,7 +51,7 @@
                     <a href="../html/news.html" class="nav__element__link">Noticias</a>
                 </li>
             </ul>
-            <a class="nav__logo__container" href="../html/index.html">
+            <a class="nav__logo__container" href="../index.html">
                 <img src="../imgs/logos/logo.png" alt="CUK-Logo" class="nav__logo">
             </a>
             <a href="#" class="nav__barsIcon__container">
@@ -79,7 +79,7 @@
                     </svg>
                 </a>
                 <div class="start__goBack__container">
-                    <a href="../html/index.html" class="start__goBack">
+                    <a href="../index.html" class="start__goBack">
                         <svg class="start__goBack__icon" viewBox="0 0 12 18" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0.318207 8.3003L9.11842 0.289671C9.5427 -0.096557 10.231 -0.096557 10.6552 0.289671L11.6817 1.22412C12.1056 1.60994 12.106 2.23483 11.6835 2.62147L4.70903 8.99979L11.6831 15.3785C12.106 15.7652 12.1051 16.3901 11.6813 16.7759L10.6548 17.7103C10.2305 18.0966 9.54224 18.0966 9.11797 17.7103L0.318207 9.69929C-0.106069 9.31306 -0.106069 8.68652 0.318207 8.3003Z" />
@@ -139,14 +139,14 @@
     <footer class="footer">
         <section class="footer__content__container">
             <ul class="footer__content__links">
-                <li class="footer__content__link"><a href="../html/index.html#affiliates">Afiliadas</a></li>
+                <li class="footer__content__link"><a href="../index.html#affiliates">Afiliadas</a></li>
                 <li class="footer__content__link"><a href="../html/championships.html#referees">Árbitros 2022-2024</a></li>
                 <li class="footer__content__link"><a href="../html/championships.html#coaching">Cuerpo técnico</a></li>
                 <li class="footer__content__link"><a href="../html/championships.html#ranking">Ranking 2022</a></li>
                 <li class="footer__content__link"><a href="../html/championships.html#national__championships">Campeones Nacionales 2022</a></li>
             </ul>
             <div class="footer__content__middle">
-                <a href="../html/index.html">
+                <a href="../index.html">
                     <img class="footer__content__middle__logo" src="../imgs/logos/logo.png" alt="logo cuk">
                 </a>
                 <ul class="footer__content__middle__socialMedia__container">
@@ -190,8 +190,8 @@
             </div>
             <ul class="footer__content__links footer__content__links-2">
                 <li class="footer__content__link"><a href="../html/institutional.html#files">Archivos</a></li>
-                <li class="footer__content__link"><a href="../html/index.html#news">Últimas noticias</a></li>
-                <li class="footer__content__link"><a href="../html/index.html#contact">Contáctanos</a></li>
+                <li class="footer__content__link"><a href="../index.html#news">Últimas noticias</a></li>
+                <li class="footer__content__link"><a href="../index.html#contact">Contáctanos</a></li>
                 <li class="footer__content__link"><a href="gallery.php">Galería</a></li>
                 <li class="footer__content__link"><a href="../html/institutional.html#deportistCard">Carnet del deportista</a></li>
             </ul>
@@ -200,7 +200,7 @@
         <section class="footer__copyright__container">
             <p class="footer__copyright__text">&copy; COPYRIGHT 2022 - CUK.ORG.UY</p>
             <hr class="footer__copyright__hr">
-            <a href="" class="footer__codexpert__link">Desarrollado por Codexpert</a>
+            <a href="http://codexpert.wuaze.com" class="footer__codexpert__link" target="_blank">Desarrollado por Codexpert</a>
         </section>
     </footer>
     <script src="../js/lightMode.js"></script>

@@ -53,7 +53,7 @@ const changeStartContent = (position) => {
 
     setTimeout(() => {
         
-        startBackground.style.backgroundImage = "url(../imgs/background/start-background" + position + ".png)";
+        startBackground.style.backgroundImage = "url(./imgs/background/start-background" + position + ".png)";
 
         switch (position) {
             case 0: 
@@ -67,7 +67,7 @@ const changeStartContent = (position) => {
                 startTitle.innerHTML = "Inscripciones siempre abiertas";
                 startDescription.innerHTML = "La CUK tiene las inscripciones abiertas todo el año, para que seas bienvenido en todo momento. <br>¡Inscríbete ahora!";
                 startLink.innerHTML = "Saber más";
-                startLink.href = "institutional.html#joinCUK";
+                startLink.href = "./html/institutional.html#joinCUK";
                 break;
 
             case 2: 

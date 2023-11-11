@@ -245,7 +245,6 @@ main {
     box-sizing: border-box;
 }
 
-
 .deportistCard {
     display: flex;
     flex-direction: column;
@@ -281,7 +280,6 @@ main {
     overflow-y: auto;
     max-width: 1000px;
     width: 100vw;
-    padding: 0 20px;
     box-sizing: border-box;
 }
 
@@ -401,6 +399,10 @@ main {
     .members__content {
         flex-direction: column;
         width: auto;
+    }
+
+    .deportistCard__content {
+        padding: 0 20px;
     }
     
 }

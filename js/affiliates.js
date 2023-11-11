@@ -181,7 +181,11 @@ const changeModalData = (organizationName) => {
         for (const property in organization) {
             if (organization.hasOwnProperty(property)) {
                 modalDescription.innerHTML += `<p> ${property}: ${organization[property]} </p>`;
-                modalImg.src = `../imgs/logos/${organizationName}.png`;
+                if (document.querySelector(".events")) { // este if hace que si esta en el index tenga una ruta, y si esta en affiliates.html tenga otra
+                    modalImg.src = `./imgs/logos/${organizationName}.png`;
+                } else {
+                    modalImg.src = `../imgs/logos/${organizationName}.png`;
+                }
             }
         }
     }
